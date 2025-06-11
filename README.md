@@ -44,10 +44,11 @@ LoRA keeps memory footprint small and permits merging adapter weights for deploy
 
 ## Quick-start
 
-```bash```
-```pip install -r requirements.txt```
-```python serve.py --checkpoint ./checkpoints/gemma3-7b-church```
-
+```
+bash
+pip install -r requirements.txt
+python serve.py --checkpoint ./checkpoints/gemma3-7b-church
+```
 
 A reference serve.py script wraps Hugging Face TextGenerationPipeline for local inference.
 
