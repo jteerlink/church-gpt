@@ -19,7 +19,7 @@ from requests.exceptions import (
     Timeout
 )
 
-from church_scraper import ScraperConfig, ContentScraper
+from src.church_scraper import ScraperConfig, ContentScraper
 
 
 class TestContentScraper:
@@ -50,7 +50,7 @@ class TestContentScraper:
         assert 'http://' in session.adapters
         assert 'https://' in session.adapters
     
-    @patch('church_scraper.requests.Session.get')
+    @patch('src.church_scraper.core.requests.Session.get')
     def test_robust_get_success(self, mock_get):
         """Test successful HTTP request."""
         # Mock successful response
@@ -66,7 +66,7 @@ class TestContentScraper:
         assert response == mock_response
         mock_get.assert_called_once()
     
-    @patch('church_scraper.requests.Session.get')
+    @patch('src.church_scraper.core.requests.Session.get')
     def test_robust_get_404_error(self, mock_get):
         """Test handling of 404 errors."""
         # Mock 404 response
@@ -79,8 +79,8 @@ class TestContentScraper:
         with pytest.raises(HTTPError):
             self.scraper.robust_get('http://example.com/notfound')
     
-    @patch('church_scraper.requests.Session.get')
-    @patch('church_scraper.time.sleep')
+    @patch('src.church_scraper.core.requests.Session.get')
+    @patch('src.church_scraper.core.time.sleep')
     def test_robust_get_retry_on_connection_error(self, mock_sleep, mock_get):
         """Test retry mechanism for connection errors."""
         # Mock connection error on first two attempts, success on third
@@ -98,8 +98,8 @@ class TestContentScraper:
         assert mock_sleep.call_count == 3  # Sleep called: config delay + 2 retry delays
         assert response.status_code == 200
     
-    @patch('church_scraper.requests.Session.get')
-    @patch('church_scraper.time.sleep')
+    @patch('src.church_scraper.core.requests.Session.get')
+    @patch('src.church_scraper.core.time.sleep')
     def test_robust_get_retry_on_ssl_error(self, mock_sleep, mock_get):
         """Test retry mechanism for SSL errors."""
         # Mock SSL error on first attempt, success on second
@@ -116,8 +116,8 @@ class TestContentScraper:
         assert mock_sleep.call_count == 2  # Sleep called: config delay + 1 retry delay
         assert response.status_code == 200
     
-    @patch('church_scraper.requests.Session.get')
-    @patch('church_scraper.time.sleep')
+    @patch('src.church_scraper.core.requests.Session.get')
+    @patch('src.church_scraper.core.time.sleep')
     def test_robust_get_retry_on_timeout(self, mock_sleep, mock_get):
         """Test retry mechanism for timeout errors."""
         # Mock timeout error on first attempt, success on second
@@ -134,8 +134,8 @@ class TestContentScraper:
         assert mock_sleep.call_count == 2  # Sleep called: config delay + 1 retry delay
         assert response.status_code == 200
     
-    @patch('church_scraper.requests.Session.get')
-    @patch('church_scraper.time.sleep')
+    @patch('src.church_scraper.core.requests.Session.get')
+    @patch('src.church_scraper.core.time.sleep')
     def test_robust_get_retry_on_500_error(self, mock_sleep, mock_get):
         """Test retry mechanism for 500 server errors."""
         # Mock 500 error on first attempt, success on second
@@ -159,8 +159,8 @@ class TestContentScraper:
         assert mock_sleep.call_count == 2  # Sleep called: config delay + 1 retry delay
         assert response.status_code == 200
     
-    @patch('church_scraper.requests.Session.get')
-    @patch('church_scraper.time.sleep')
+    @patch('src.church_scraper.core.requests.Session.get')
+    @patch('src.church_scraper.core.time.sleep')
     def test_robust_get_max_retries_exceeded(self, mock_sleep, mock_get):
         """Test that RequestException is raised when max retries exceeded."""
         # Mock connection error for all attempts
@@ -174,7 +174,7 @@ class TestContentScraper:
         assert mock_get.call_count == 10
         assert mock_sleep.call_count == 10  # Sleep called: config delay + 9 retry delays
     
-    @patch('church_scraper.requests.Session.get')
+    @patch('src.church_scraper.core.requests.Session.get')
     def test_robust_get_permanent_error_no_retry(self, mock_get):
         """Test that permanent errors (403) are not retried."""
         # Mock 403 response
@@ -190,7 +190,7 @@ class TestContentScraper:
         # Verify no retries occurred
         assert mock_get.call_count == 1
     
-    @patch('church_scraper.time.sleep')
+    @patch('src.church_scraper.core.time.sleep')
     def test_robust_get_respects_delay_config(self, mock_sleep):
         """Test that configured delay is respected between requests."""
         with patch.object(self.scraper.session, 'get') as mock_get:

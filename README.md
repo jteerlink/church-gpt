@@ -8,19 +8,31 @@ Gemma 3 models are compact, open-weight Transformer decoders released by Google;
 
 ## Repository layout
 
-| Path | Purpose |
-|------|---------|
-| `church_scraper.py` | Comprehensive scraping pipeline with robust error handling, rate limiting, and progress tracking. |
-| `start_scraper.sh` | Interactive CLI helper script for running the content scraper with various configurations. |
-| `serve.py` | Local inference server for Church-GPT with both interactive chat and API modes. |
-| `start_chat.sh` | Interactive CLI helper script for starting the chat interface or API server. |
-| `run_integration_tests.py` | Comprehensive integration test runner validating complete scraping workflows. |
-| `pyproject.toml` | Project configuration and dependencies managed by `uv`. |
-| `.python-version` | Python version specification for `uv`. |
-| `webscrape.ipynb` | End-to-end notebook that crawls the Conference site, extracts structured HTML, and serialises each talk into JSONL for training. |
-| `Gemma3_Fine_Tuning.ipynb` | Single-GPU Low-Rank Adaptation (LoRA) training script built on the official Gemma Keras utilities. |
-| `Gemma_Validation.ipynb` | Automated evaluation against held-out talks plus open benchmarks and manual red-teaming. |
-| `README.md` | Project description and usage guide. |
+```
+church-gpt/
+├── src/
+│   └── church_scraper/          # Main scraping library
+│       ├── __init__.py          # Package exports  
+│       ├── __main__.py          # Module entry point
+│       └── core.py              # Core scraper implementation
+├── tests/
+│   ├── unit/                    # Unit tests
+│   └── integration/             # Integration tests
+├── scripts/
+│   ├── start_scraper.sh         # Interactive scraper CLI
+│   ├── start_chat.sh            # Chat interface CLI
+│   ├── serve.py                 # Local inference server
+│   └── run_tests.py             # Test runner script
+├── notebooks/
+│   ├── webscrape.ipynb          # End-to-end scraping notebook
+│   ├── Gemma_Validation.ipynb   # Model validation
+│   └── Gemma3_Fine_Tuning.ipynb # Fine-tuning pipeline
+├── docs/
+│   └── INTEGRATION_TESTS_README.md # Testing documentation
+├── logs/                        # Scraper logs
+├── scraped_content/            # Scraped content output
+└── pyproject.toml              # Project configuration
+```
 
 ## Data pipeline
 
@@ -77,16 +89,21 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 uv add requests beautifulsoup4
 
 # Scrape General Conference talks (1995-present)
-uv run python church_scraper.py --content-type conference --start-year 1995
+uv run python -m src.church_scraper --content-type conference --start-year 1995
 
 # Scrape Liahona articles (2008-present, excluding conference months)
-uv run python church_scraper.py --content-type liahona --start-year 2008
+uv run python -m src.church_scraper --content-type liahona --start-year 2008
 
 # Scrape both content types with custom settings
-uv run python church_scraper.py --start-year 2020 --delay 1.5 --verbose
+uv run python -m src.church_scraper --start-year 2020 --delay 1.5 --verbose
 
 # Use the CLI helper script (handles uv setup automatically)
-./start_scraper.sh
+./scripts/start_scraper.sh
+
+# Run tests
+python scripts/run_tests.py           # All tests
+python scripts/run_tests.py --unit    # Unit tests only
+python scripts/run_tests.py --integration  # Integration tests only
 ```
 
 ### Model Serving
@@ -96,13 +113,13 @@ uv run python church_scraper.py --start-year 2020 --delay 1.5 --verbose
 uv add torch transformers peft fastapi uvicorn
 
 # Interactive chat mode (default)
-uv run python serve.py --checkpoint ./checkpoints/gemma3-7b-church
+uv run python scripts/serve.py --checkpoint ./checkpoints/gemma3-7b-church
 
 # API server mode
-uv run python serve.py --checkpoint ./checkpoints/gemma3-7b-church --api --port 8000
+uv run python scripts/serve.py --checkpoint ./checkpoints/gemma3-7b-church --api --port 8000
 
 # Use the CLI helper script (handles uv setup automatically)
-./start_chat.sh
+./scripts/start_chat.sh
 ```
 
 ### Testing and Validation
@@ -111,28 +128,31 @@ uv run python serve.py --checkpoint ./checkpoints/gemma3-7b-church --api --port 
 # Install test dependencies
 uv add pytest pytest-cov
 
+# Run all tests with the test runner
+python scripts/run_tests.py
+
 # Run comprehensive integration tests
-uv run python run_integration_tests.py
+uv run python tests/integration/run_integration_tests.py
 
 # Validate integration test coverage
-uv run python validate_integration_tests.py
+uv run python tests/integration/validate_integration_tests.py
 
-# Run specific test suites
-uv run pytest test_conference_scraper.py -v
-uv run pytest test_liahona_scraper.py -v
+# Run specific test suites with pytest
+uv run pytest tests/unit/test_conference_scraper.py -v
+uv run pytest tests/unit/test_liahona_scraper.py -v
 ```
 
 ### CLI Helper Scripts
 
 The project includes interactive bash scripts for easier operation:
 
-**Content Scraping (`start_scraper.sh`)**:
+**Content Scraping (`scripts/start_scraper.sh`)**:
 - Interactive menu for selecting content types and date ranges
 - Quick presets for common scraping scenarios
 - Automatic `uv` installation and dependency management
 - Progress tracking and error handling
 
-**Model Chat Interface (`start_chat.sh`)**:
+**Model Chat Interface (`scripts/start_chat.sh`)**:
 - Automatic model checkpoint detection
 - Interactive and API server modes
 - Configurable generation parameters

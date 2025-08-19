@@ -12,7 +12,7 @@ import unittest
 from pathlib import Path
 from unittest.mock import MagicMock, patch
 
-from church_scraper import (
+from src.church_scraper import (
     ProgressTracker,
     RateLimiter,
     setup_logging

@@ -20,7 +20,7 @@ from test_integration import (
     TestConfigurationValidation
 )
 
-from church_scraper import ScraperConfig, ConferenceScraper, LiahonaScraper
+from src.church_scraper import ScraperConfig, ConferenceScraper, LiahonaScraper
 
 
 def validate_complete_workflows():

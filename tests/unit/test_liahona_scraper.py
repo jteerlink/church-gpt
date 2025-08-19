@@ -14,7 +14,7 @@ from pathlib import Path
 import requests
 from requests.exceptions import RequestException
 
-from church_scraper import LiahonaScraper, ScraperConfig
+from src.church_scraper import LiahonaScraper, ScraperConfig
 
 
 class TestLiahonaScraper(unittest.TestCase):
@@ -93,7 +93,7 @@ class TestLiahonaScraper(unittest.TestCase):
             self.assertEqual(year, 2010)
             self.assertNotIn(month, [4, 10])
     
-    @patch('church_scraper.ContentScraper.robust_get')
+    @patch('src.church_scraper.core.ContentScraper.robust_get')
     def test_scrape_monthly_page_success(self, mock_get):
         """Test successful scraping of monthly Liahona page."""
         # Mock HTML content with article links
@@ -132,7 +132,7 @@ class TestLiahonaScraper(unittest.TestCase):
         # Verify robust_get was called with correct URL
         mock_get.assert_called_once_with(month_url)
     
-    @patch('church_scraper.ContentScraper.robust_get')
+    @patch('src.church_scraper.core.ContentScraper.robust_get')
     def test_scrape_monthly_page_no_articles(self, mock_get):
         """Test scraping monthly page with no article links."""
         # Mock HTML content without article links
@@ -159,7 +159,7 @@ class TestLiahonaScraper(unittest.TestCase):
         # Should find no article URLs
         self.assertEqual(len(article_urls), 0)
     
-    @patch('church_scraper.ContentScraper.robust_get')
+    @patch('src.church_scraper.core.ContentScraper.robust_get')
     def test_scrape_monthly_page_http_error(self, mock_get):
         """Test scraping monthly page with HTTP error."""
         # Mock HTTP error
@@ -170,7 +170,7 @@ class TestLiahonaScraper(unittest.TestCase):
         with self.assertRaises(RequestException):
             self.scraper.scrape_monthly_page(month_url)
     
-    @patch('church_scraper.ContentScraper.robust_get')
+    @patch('src.church_scraper.core.ContentScraper.robust_get')
     def test_scrape_article_success(self, mock_get):
         """Test successful scraping of individual article."""
         # Mock HTML content for article
@@ -204,7 +204,7 @@ class TestLiahonaScraper(unittest.TestCase):
         # Verify robust_get was called with correct URL
         mock_get.assert_called_once_with(article_url)
     
-    @patch('church_scraper.ContentScraper.robust_get')
+    @patch('src.church_scraper.core.ContentScraper.robust_get')
     def test_scrape_article_empty_content(self, mock_get):
         """Test scraping article with empty or no content."""
         # Mock HTML content without meaningful text
@@ -229,7 +229,7 @@ class TestLiahonaScraper(unittest.TestCase):
         # Should return empty string for no meaningful content
         self.assertEqual(content, "")
     
-    @patch('church_scraper.ContentScraper.robust_get')
+    @patch('src.church_scraper.core.ContentScraper.robust_get')
     def test_scrape_article_http_error(self, mock_get):
         """Test scraping article with HTTP error."""
         # Mock HTTP error
@@ -240,9 +240,9 @@ class TestLiahonaScraper(unittest.TestCase):
         with self.assertRaises(RequestException):
             self.scraper.scrape_article(article_url)
     
-    @patch('church_scraper.LiahonaScraper.scrape_article')
-    @patch('church_scraper.LiahonaScraper.scrape_monthly_page')
-    @patch('church_scraper.LiahonaScraper.get_monthly_urls')
+    @patch('src.church_scraper.core.LiahonaScraper.scrape_article')
+    @patch('src.church_scraper.core.LiahonaScraper.scrape_monthly_page')
+    @patch('src.church_scraper.core.LiahonaScraper.get_monthly_urls')
     def test_run_success(self, mock_get_urls, mock_scrape_page, mock_scrape_article):
         """Test successful execution of complete Liahona scraping workflow."""
         # Mock monthly URLs
@@ -274,8 +274,8 @@ class TestLiahonaScraper(unittest.TestCase):
         self.assertTrue(jan_dir.exists())
         self.assertTrue(feb_dir.exists())
     
-    @patch('church_scraper.LiahonaScraper.scrape_monthly_page')
-    @patch('church_scraper.LiahonaScraper.get_monthly_urls')
+    @patch('src.church_scraper.core.LiahonaScraper.scrape_monthly_page')
+    @patch('src.church_scraper.core.LiahonaScraper.get_monthly_urls')
     def test_run_no_articles_found(self, mock_get_urls, mock_scrape_page):
         """Test run method when no articles are found on monthly pages."""
         # Mock monthly URLs
@@ -293,9 +293,9 @@ class TestLiahonaScraper(unittest.TestCase):
         mock_get_urls.assert_called_once()
         mock_scrape_page.assert_called_once()
     
-    @patch('church_scraper.LiahonaScraper.scrape_article')
-    @patch('church_scraper.LiahonaScraper.scrape_monthly_page')
-    @patch('church_scraper.LiahonaScraper.get_monthly_urls')
+    @patch('src.church_scraper.core.LiahonaScraper.scrape_article')
+    @patch('src.church_scraper.core.LiahonaScraper.scrape_monthly_page')
+    @patch('src.church_scraper.core.LiahonaScraper.get_monthly_urls')
     def test_run_skip_existing_files(self, mock_get_urls, mock_scrape_page, mock_scrape_article):
         """Test run method skips existing files for resumable operations."""
         # Create existing file
@@ -329,7 +329,7 @@ class TestLiahonaScraper(unittest.TestCase):
         # Existing file should remain unchanged
         self.assertEqual(existing_file.read_text(encoding='utf-8'), "Existing content")
     
-    @patch('church_scraper.LiahonaScraper.get_monthly_urls')
+    @patch('src.church_scraper.core.LiahonaScraper.get_monthly_urls')
     def test_run_handles_exceptions(self, mock_get_urls):
         """Test run method handles exceptions gracefully."""
         # Mock URLs that will cause an exception

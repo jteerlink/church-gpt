@@ -17,7 +17,7 @@ from unittest.mock import Mock, patch, MagicMock
 import requests
 from requests.exceptions import RequestException
 
-from church_scraper import (
+from src.church_scraper import (
     ScraperConfig, 
     ConferenceScraper, 
     LiahonaScraper, 

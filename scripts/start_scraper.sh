@@ -118,19 +118,19 @@ interactive_mode() {
             print_color $GREEN "Scraping General Conference talks..."
             read -p "Start year (default: 1995): " start_year
             start_year=${start_year:-1995}
-            uv run python church_scraper.py --content-type conference --start-year $start_year --verbose
+            uv run python -m src.church_scraper.core --content-type conference --start-year $start_year --verbose
             ;;
         2)
             print_color $GREEN "Scraping Liahona articles..."
             read -p "Start year (default: 2008): " start_year
             start_year=${start_year:-2008}
-            uv run python church_scraper.py --content-type liahona --start-year $start_year --verbose
+            uv run python -m src.church_scraper.core --content-type liahona --start-year $start_year --verbose
             ;;
         3)
             print_color $GREEN "Scraping both content types..."
             read -p "Start year (default: 2020): " start_year
             start_year=${start_year:-2020}
-            uv run python church_scraper.py --content-type both --start-year $start_year --verbose
+            uv run python -m src.church_scraper.core --content-type both --start-year $start_year --verbose
             ;;
         4)
             print_color $GREEN "Custom configuration..."
@@ -140,7 +140,7 @@ interactive_mode() {
             read -p "Delay between requests (default: 1.0): " delay
             read -p "Output directory (default: scraped_content): " output_dir
             
-            cmd="uv run python church_scraper.py --verbose"
+            cmd="uv run python -m src.church_scraper.core --verbose"
             [ ! -z "$start_year" ] && cmd="$cmd --start-year $start_year"
             [ ! -z "$end_year" ] && cmd="$cmd --end-year $end_year"
             [ ! -z "$content_type" ] && cmd="$cmd --content-type $content_type"
@@ -173,13 +173,13 @@ main() {
             print_header
             print_color $GREEN "Quick Conference scrape (2020+)..."
             check_dependencies
-            uv run python church_scraper.py --content-type conference --start-year 2020 --verbose
+            uv run python -m src.church_scraper.core --content-type conference --start-year 2020 --verbose
             ;;
         --quick-liahona)
             print_header
             print_color $GREEN "Quick Liahona scrape (2020+)..."
             check_dependencies
-            uv run python church_scraper.py --content-type liahona --start-year 2020 --verbose
+            uv run python -m src.church_scraper.core --content-type liahona --start-year 2020 --verbose
             ;;
         "")
             check_dependencies

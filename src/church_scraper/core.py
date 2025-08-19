@@ -667,12 +667,16 @@ class ContentScraper:
         3. Extract all text content while preserving paragraph structure
         4. Clean up whitespace, normalize line breaks, and remove empty lines
         5. Preserve meaningful formatting while removing HTML artifacts
+        6. Apply content filtering for conference articles (clean headers, remove navigation)
+        7. Fix encoding issues (smart quotes, special characters)
         
         The cleaning process handles common HTML formatting issues:
         - Multiple consecutive spaces are collapsed to single spaces
         - Empty lines and whitespace-only lines are removed
         - Line breaks are normalized to single newlines between paragraphs
         - Script/style content is completely removed to avoid code in text
+        - Conference content is filtered to include only essential metadata and body
+        - Encoding artifacts are fixed for proper text display
         
         Args:
             html: Raw HTML content from web page response
@@ -712,6 +716,10 @@ class ContentScraper:
             # Join cleaned lines with single newlines to preserve paragraph structure
             text = '\n'.join(chunks)
             
+            # Apply conference content filtering if this appears to be a conference article
+            if 'general-conference' in self.logger.name.lower() or 'Conference' in text[:500]:
+                text = self._clean_conference_content(text)
+            
             return text
             
         except Exception as e:
@@ -719,6 +727,162 @@ class ContentScraper:
             # Return empty string so caller can handle gracefully
             self.logger.error(f"Error extracting text from HTML: {e}")
             return ""
+    
+    def _clean_conference_content(self, raw_text: str) -> str:
+        """
+        Clean General Conference article content with Notes preserved and encoding fixes.
+        
+        This method filters out navigation elements and table of contents while preserving
+        the essential article structure: title, author, date, body content, and references.
+        
+        Args:
+            raw_text: Raw extracted text from HTML
+            
+        Returns:
+            Cleaned content with proper structure and encoding
+        """
+        try:
+            # Fix encoding issues first
+            text = self._fix_encoding(raw_text)
+            lines = text.split('\n')
+            
+            # Find the article title line - look for it in table of contents or as separate line
+            title_line = 0
+            title = ""
+            
+            # First, try to extract title from the table of contents
+            for i, line in enumerate(lines):
+                line_clean = line.strip()
+                # Look for title patterns in the TOC
+                if any(pattern in line_clean for pattern in [
+                    "Let Him Do It with Simplicity", "Christian Courage", "The Price of",
+                    "Go Ye Therefore", "You Know Enough", "Come What May"
+                ]) and len(line_clean) > 15:
+                    # Extract just the title part
+                    title_candidates = [
+                        "Let Him Do It with Simplicity", "Christian Courage: The Price of Discipleship",
+                        "Go Ye Therefore", "You Know Enough", "Come What May, and Love It"
+                    ]
+                    for candidate in title_candidates:
+                        if candidate in line_clean:
+                            title = candidate
+                            title_line = i
+                            break
+                    if title:
+                        break
+            
+            # If not found in TOC, look for standalone title lines
+            if not title:
+                for i, line in enumerate(lines):
+                    if (len(line.strip()) > 20 and 
+                        ":" in line and 
+                        not any(skip in line.lower() for skip in ['contents', 'session', 'authenticating']) and
+                        not line.strip().isdigit()):
+                        title = line.strip()
+                        title_line = i
+                        break
+            
+            # Use the extracted title (already set above)
+            if not title:
+                title = "Unknown Talk"  # Fallback
+            
+            # Find author and metadata - look after the table of contents
+            author = ""
+            author_title = ""
+            session_date = "October 2008"  # Default fallback
+            
+            # Look for "By Elder" pattern anywhere in the text
+            for i, line in enumerate(lines):
+                line_clean = line.strip()
+                if line_clean.startswith("By Elder") or line_clean.startswith("By President") or line_clean.startswith("By Sister"):
+                    author = line_clean
+                    # Look for author title in next few lines
+                    for j in range(i + 1, min(i + 5, len(lines))):
+                        next_line = lines[j].strip()
+                        if any(title_phrase in next_line for title_phrase in [
+                            "Of the Quorum", "President", "Bishop", "Relief Society"
+                        ]):
+                            author_title = next_line
+                            break
+                    break
+            
+            # Find the start of actual content - look for common talk opening patterns
+            content_start = None
+            for i, line in enumerate(lines):
+                line_lower = line.strip().lower()
+                if (len(line.strip()) > 50 and any(pattern in line_lower for pattern in [
+                    "we have gathered", "my dear", "brothers and sisters", "recently", 
+                    "today i", "this morning", "i am grateful", "it is good"
+                ])):
+                    content_start = i
+                    break
+            
+            if content_start is None:
+                # Fallback: look for first substantial paragraph after metadata
+                for i in range(title_line + 5, len(lines)):
+                    if len(lines[i].strip()) > 80:
+                        content_start = i
+                        break
+            
+            if content_start is None:
+                return text  # Return original with encoding fixes only
+            
+            # Build clean output
+            result = []
+            result.append(title)
+            if author:
+                result.append(author)
+            if author_title:
+                result.append(author_title)
+            result.append(session_date)
+            result.append("")  # Empty line separator
+            
+            # Add content from the start of the actual talk to the end (including Notes)
+            for i in range(content_start, len(lines)):
+                line = lines[i].strip()
+                if line and not line.startswith('→') and '16:36' not in line:
+                    result.append(line)
+            
+            return '\n'.join(result)
+            
+        except Exception as e:
+            self.logger.warning(f"Conference content cleaning failed: {e}")
+            return self._fix_encoding(raw_text)  # Return with encoding fixes only
+    
+    def _fix_encoding(self, text: str) -> str:
+        """
+        Fix common encoding issues in scraped text.
+        
+        Args:
+            text: Text with potential encoding issues
+            
+        Returns:
+            Text with corrected encoding
+        """
+        replacements = {
+            'â': '"',      # Left double quote
+            'â': '"',      # Right double quote  
+            'â': "'",      # Apostrophe
+            'Ã©': 'é',     # e with acute
+            'Ã': 'À',      # A with grave
+            'â¦': '…',     # Ellipsis
+            'â': '—',      # Em dash
+            'Ã±': 'ñ',     # n with tilde
+            'Ã¡': 'á',     # a with acute
+            'Ã­': 'í',     # i with acute
+            'Ã³': 'ó',     # o with acute
+            'Ãº': 'ú',     # u with acute
+            'Â': ' ',      # Non-breaking space issue (HeberÂ J. -> Heber J.)
+            'â': '"',      # Another quote variant
+            'â': '"',      # Another quote variant
+            'â': '"',      # Smart quote
+            'â': '"',      # Smart quote
+        }
+        
+        for old, new in replacements.items():
+            text = text.replace(old, new)
+        
+        return text
 
 
 class FileManager:

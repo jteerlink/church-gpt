@@ -11,7 +11,7 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 
-from church_scraper import FileManager
+from src.church_scraper import FileManager
 
 
 class TestFileManager(unittest.TestCase):
@@ -318,7 +318,7 @@ class TestFileManager(unittest.TestCase):
         # Should return empty list, not raise error
         self.assertEqual(files, [])
     
-    @patch('church_scraper.Path.mkdir')
+    @patch('src.church_scraper.core.Path.mkdir')
     def test_create_directory_structure_os_error(self, mock_mkdir):
         """Test handling of OS errors during directory creation."""
         # Mock mkdir to raise OSError

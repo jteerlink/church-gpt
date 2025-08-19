@@ -14,7 +14,7 @@ from pathlib import Path
 import requests
 from requests.exceptions import RequestException
 
-from church_scraper import ConferenceScraper, ScraperConfig
+from src.church_scraper import ConferenceScraper, ScraperConfig
 
 
 class TestConferenceScraper(unittest.TestCase):
@@ -80,7 +80,7 @@ class TestConferenceScraper(unittest.TestCase):
         self.assertEqual(urls[0], (2000, 4, "https://www.churchofjesuschrist.org/study/general-conference/2000/04?lang=eng"))
         self.assertEqual(urls[1], (2000, 10, "https://www.churchofjesuschrist.org/study/general-conference/2000/10?lang=eng"))
     
-    @patch('church_scraper.ContentScraper.robust_get')
+    @patch('src.church_scraper.core.ContentScraper.robust_get')
     def test_scrape_conference_page_success(self, mock_get):
         """Test successful scraping of conference page to extract talk URLs."""
         # Mock HTML response with talk links
@@ -122,7 +122,7 @@ class TestConferenceScraper(unittest.TestCase):
         # Verify robust_get was called with correct URL
         mock_get.assert_called_once_with(conf_url)
     
-    @patch('church_scraper.ContentScraper.robust_get')
+    @patch('src.church_scraper.core.ContentScraper.robust_get')
     def test_scrape_conference_page_no_talks(self, mock_get):
         """Test scraping conference page with no talk links."""
         # Mock HTML response without talk links
@@ -147,7 +147,7 @@ class TestConferenceScraper(unittest.TestCase):
         # Should return empty list
         self.assertEqual(talk_urls, [])
     
-    @patch('church_scraper.ContentScraper.robust_get')
+    @patch('src.church_scraper.core.ContentScraper.robust_get')
     def test_scrape_conference_page_http_error(self, mock_get):
         """Test handling of HTTP errors when scraping conference page."""
         # Configure mock to raise RequestException
@@ -159,7 +159,7 @@ class TestConferenceScraper(unittest.TestCase):
         with self.assertRaises(RequestException):
             self.scraper.scrape_conference_page(conf_url)
     
-    @patch('church_scraper.ContentScraper.robust_get')
+    @patch('src.church_scraper.core.ContentScraper.robust_get')
     def test_scrape_talk_success(self, mock_get):
         """Test successful scraping of individual talk content."""
         # Mock HTML response with talk content
@@ -196,7 +196,7 @@ class TestConferenceScraper(unittest.TestCase):
         # Verify robust_get was called
         mock_get.assert_called_once_with(talk_url)
     
-    @patch('church_scraper.ContentScraper.robust_get')
+    @patch('src.church_scraper.core.ContentScraper.robust_get')
     def test_scrape_talk_empty_content(self, mock_get):
         """Test handling of talk page with no extractable content."""
         # Mock HTML response with no meaningful content
@@ -219,7 +219,7 @@ class TestConferenceScraper(unittest.TestCase):
         # Should return empty string for content with no text
         self.assertEqual(content.strip(), "")
     
-    @patch('church_scraper.ContentScraper.robust_get')
+    @patch('src.church_scraper.core.ContentScraper.robust_get')
     def test_scrape_talk_http_error(self, mock_get):
         """Test handling of HTTP errors when scraping talk."""
         # Configure mock to raise RequestException
@@ -231,9 +231,9 @@ class TestConferenceScraper(unittest.TestCase):
         with self.assertRaises(RequestException):
             self.scraper.scrape_talk(talk_url)
     
-    @patch('church_scraper.ConferenceScraper.scrape_talk')
-    @patch('church_scraper.ConferenceScraper.scrape_conference_page')
-    @patch('church_scraper.ConferenceScraper.get_conference_urls')
+    @patch('src.church_scraper.core.ConferenceScraper.scrape_talk')
+    @patch('src.church_scraper.core.ConferenceScraper.scrape_conference_page')
+    @patch('src.church_scraper.core.ConferenceScraper.get_conference_urls')
     def test_run_complete_workflow(self, mock_get_urls, mock_scrape_page, mock_scrape_talk):
         """Test complete scraping workflow with mocked methods."""
         # Mock conference URLs
@@ -294,9 +294,9 @@ class TestConferenceScraper(unittest.TestCase):
         with open(talk3_file, 'r', encoding='utf-8') as f:
             self.assertEqual(f.read(), "Content of talk 3")
     
-    @patch('church_scraper.ConferenceScraper.scrape_talk')
-    @patch('church_scraper.ConferenceScraper.scrape_conference_page')
-    @patch('church_scraper.ConferenceScraper.get_conference_urls')
+    @patch('src.church_scraper.core.ConferenceScraper.scrape_talk')
+    @patch('src.church_scraper.core.ConferenceScraper.scrape_conference_page')
+    @patch('src.church_scraper.core.ConferenceScraper.get_conference_urls')
     def test_run_skip_existing_files(self, mock_get_urls, mock_scrape_page, mock_scrape_talk):
         """Test that existing files are skipped during scraping."""
         # Create existing file
@@ -337,8 +337,8 @@ class TestConferenceScraper(unittest.TestCase):
         with open(new_file, 'r', encoding='utf-8') as f:
             self.assertEqual(f.read(), "New talk content")
     
-    @patch('church_scraper.ConferenceScraper.scrape_conference_page')
-    @patch('church_scraper.ConferenceScraper.get_conference_urls')
+    @patch('src.church_scraper.core.ConferenceScraper.scrape_conference_page')
+    @patch('src.church_scraper.core.ConferenceScraper.get_conference_urls')
     def test_run_handle_conference_page_error(self, mock_get_urls, mock_scrape_page):
         """Test handling of errors when scraping conference pages."""
         # Mock conference URLs
