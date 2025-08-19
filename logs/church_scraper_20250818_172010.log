@@ -1,0 +1,4 @@
+2025-08-18 17:20:10 - root - INFO - Logging initialized
+2025-08-18 17:20:10 - LiahonaScraper - INFO - Generated 10 Liahona URLs for years 2008-2008
+2025-08-18 17:20:10 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/01?lang=eng
+2025-08-18 17:20:12 - LiahonaScraper - INFO - Found 41 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/01?lang=eng

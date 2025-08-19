@@ -10,6 +10,13 @@ Gemma 3 models are compact, open-weight Transformer decoders released by Google;
 
 | Path | Purpose |
 |------|---------|
+| `church_scraper.py` | Comprehensive scraping pipeline with robust error handling, rate limiting, and progress tracking. |
+| `start_scraper.sh` | Interactive CLI helper script for running the content scraper with various configurations. |
+| `serve.py` | Local inference server for Church-GPT with both interactive chat and API modes. |
+| `start_chat.sh` | Interactive CLI helper script for starting the chat interface or API server. |
+| `run_integration_tests.py` | Comprehensive integration test runner validating complete scraping workflows. |
+| `pyproject.toml` | Project configuration and dependencies managed by `uv`. |
+| `.python-version` | Python version specification for `uv`. |
 | `webscrape.ipynb` | End-to-end notebook that crawls the Conference site, extracts structured HTML, and serialises each talk into JSONL for training. |
 | `Gemma3_Fine_Tuning.ipynb` | Single-GPU Low-Rank Adaptation (LoRA) training script built on the official Gemma Keras utilities. |
 | `Gemma_Validation.ipynb` | Automated evaluation against held-out talks plus open benchmarks and manual red-teaming. |
@@ -21,6 +28,19 @@ Gemma 3 models are compact, open-weight Transformer decoders released by Google;
 2. **Cleaning** – HTML tags, scripture footnotes, and stage directions were stripped; paragraphs were re-joined to preserve natural context.  
 3. **Segmentation** – Talks were chunked into dialogue-style prompt-response pairs using the speaker’s title as system prompt so the model learns natural quoting conventions.  
 4. **Licensing** – Conference content is copyright Intellectual Reserve Inc.; usage here is strictly non-commercial under LDS terms of use.
+
+### Improved Pipeline Features
+
+The enhanced scraping system provides:
+
+- **Robust scraping** – Implements exponential backoff retry logic, rate limiting, and progress tracking for reliable data collection
+- **Resumable operations** – Automatically skips existing files, allowing interrupted scraping to resume seamlessly
+- **Content organization** – Creates structured directory hierarchies (`scraped_content/general-conference/YYYY-MM/` and `scraped_content/liahona/YYYY-MM/`)
+- **Rate limiting** – Respectful 1-second delays between requests (configurable)
+- **Progress tracking** – Real-time progress bars with ETA calculations
+- **Error recovery** – Exponential backoff for network issues and server errors
+- **Logging** – Detailed file and console logging for debugging and monitoring
+- **Quality assurance** – Comprehensive integration tests validate complete workflows, directory structure, and error recovery
 
 ## Fine-tuning methodology
 
@@ -44,13 +64,126 @@ LoRA keeps memory footprint small and permits merging adapter weights for deploy
 
 ## Quick-start
 
-```
-bash
-pip install -r requirements.txt
-python serve.py --checkpoint ./checkpoints/gemma3-7b-church
+### Data Collection Pipeline
+
+The project uses `uv` for fast, reliable Python package management:
+
+```bash
+# Install uv (if not already installed)
+curl -LsSf https://astral.sh/uv/install.sh | sh
+# or: brew install uv
+
+# Install scraping dependencies
+uv add requests beautifulsoup4
+
+# Scrape General Conference talks (1995-present)
+uv run python church_scraper.py --content-type conference --start-year 1995
+
+# Scrape Liahona articles (2008-present, excluding conference months)
+uv run python church_scraper.py --content-type liahona --start-year 2008
+
+# Scrape both content types with custom settings
+uv run python church_scraper.py --start-year 2020 --delay 1.5 --verbose
+
+# Use the CLI helper script (handles uv setup automatically)
+./start_scraper.sh
 ```
 
-A reference serve.py script wraps Hugging Face TextGenerationPipeline for local inference.
+### Model Serving
+
+```bash
+# Install serving dependencies
+uv add torch transformers peft fastapi uvicorn
+
+# Interactive chat mode (default)
+uv run python serve.py --checkpoint ./checkpoints/gemma3-7b-church
+
+# API server mode
+uv run python serve.py --checkpoint ./checkpoints/gemma3-7b-church --api --port 8000
+
+# Use the CLI helper script (handles uv setup automatically)
+./start_chat.sh
+```
+
+### Testing and Validation
+
+```bash
+# Install test dependencies
+uv add pytest pytest-cov
+
+# Run comprehensive integration tests
+uv run python run_integration_tests.py
+
+# Validate integration test coverage
+uv run python validate_integration_tests.py
+
+# Run specific test suites
+uv run pytest test_conference_scraper.py -v
+uv run pytest test_liahona_scraper.py -v
+```
+
+### CLI Helper Scripts
+
+The project includes interactive bash scripts for easier operation:
+
+**Content Scraping (`start_scraper.sh`)**:
+- Interactive menu for selecting content types and date ranges
+- Quick presets for common scraping scenarios
+- Automatic `uv` installation and dependency management
+- Progress tracking and error handling
+
+**Model Chat Interface (`start_chat.sh`)**:
+- Automatic model checkpoint detection
+- Interactive and API server modes
+- Configurable generation parameters
+- Easy setup for local inference with `uv`
+
+Both scripts provide `--help` options and support direct command-line usage for automation. They automatically handle `uv` installation and project setup.
+
+## Troubleshooting
+
+### Installing uv
+
+If `uv` is not installed, the CLI scripts will attempt to install it automatically. For manual installation:
+
+```bash
+# Using curl (recommended)
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# Using Homebrew on macOS
+brew install uv
+
+# Using pip (if needed)
+pip install uv
+```
+
+### Dependency Management
+
+`uv` automatically manages virtual environments and dependencies:
+
+```bash
+# Add dependencies as needed
+uv add requests beautifulsoup4     # Scraping dependencies
+uv add torch transformers peft     # Model serving dependencies
+uv add fastapi uvicorn             # API server dependencies
+uv add pytest pytest-cov          # Testing dependencies
+
+# Run Python with managed environment
+uv run python script.py
+```
+
+### Common Issues
+
+**Project not initialized**: The CLI scripts automatically run `uv init` if needed.
+
+**Missing dependencies**: Use `uv sync` to install all dependencies or let the CLI scripts handle it automatically.
+
+**Python version**: `uv` automatically manages Python versions. The project requires Python 3.9+.
+
+**GPU support for PyTorch**: For CUDA support, run:
+```bash
+uv add torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+```
 
 ## Responsible use
 

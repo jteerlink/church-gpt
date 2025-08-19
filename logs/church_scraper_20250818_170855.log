@@ -1,0 +1,775 @@
+2025-08-18 17:08:55 - root - INFO - Logging initialized
+2025-08-18 17:08:55 - root - INFO - Configuration: ScraperConfig(start_year=2024, end_year=2024, content_type='conference', output_dir='scraped_content', delay=0.1, user_agent='Church-Content-Scraper/1.0')
+2025-08-18 17:08:55 - FileManager - DEBUG - FileManager initialized with base directory: /Users/jaredteerlink/repos/church-gpt/scraped_content
+2025-08-18 17:08:55 - ConferenceScraper - INFO - Starting General Conference scraping...
+2025-08-18 17:08:55 - ConferenceScraper - DEBUG - Generated conference URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04?lang=eng
+2025-08-18 17:08:55 - ConferenceScraper - DEBUG - Generated conference URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10?lang=eng
+2025-08-18 17:08:55 - ConferenceScraper - INFO - Generated 2 conference URLs for years 2024-2024
+2025-08-18 17:08:55 - ConferenceScraper - INFO - Counting total talks for progress tracking...
+2025-08-18 17:08:55 - ConferenceScraper - DEBUG - Counting talks for conference: 2024-04
+2025-08-18 17:08:55 - ConferenceScraper - INFO - Scraping conference page: https://www.churchofjesuschrist.org/study/general-conference/2024/04?lang=eng
+2025-08-18 17:08:55 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04?lang=eng (attempt 1/10)
+2025-08-18 17:08:56 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04?lang=eng (286444 bytes)
+2025-08-18 17:08:56 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/saturday-morning-session?lang=eng
+2025-08-18 17:08:56 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/11oaks?lang=eng
+2025-08-18 17:08:56 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/12larson?lang=eng
+2025-08-18 17:08:56 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/13holland?lang=eng
+2025-08-18 17:08:56 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/14dennis?lang=eng
+2025-08-18 17:08:56 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/15dushku?lang=eng
+2025-08-18 17:08:56 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/16soares?lang=eng
+2025-08-18 17:08:56 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/17gerard?lang=eng
+2025-08-18 17:08:56 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/18eyring?lang=eng
+2025-08-18 17:08:56 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/saturday-afternoon-session?lang=eng
+2025-08-18 17:08:56 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/21bednar?lang=eng
+2025-08-18 17:08:56 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/22de-feo?lang=eng
+2025-08-18 17:08:56 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/23nielson?lang=eng
+2025-08-18 17:08:56 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/24alonso?lang=eng
+2025-08-18 17:08:56 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/25gong?lang=eng
+2025-08-18 17:08:56 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/26nelson?lang=eng
+2025-08-18 17:08:56 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/27cook?lang=eng
+2025-08-18 17:08:56 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/saturday-evening-session?lang=eng
+2025-08-18 17:08:56 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/31bowen?lang=eng
+2025-08-18 17:08:56 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/32bangerter?lang=eng
+2025-08-18 17:08:56 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/33spannaus?lang=eng
+2025-08-18 17:08:56 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/34carpenter?lang=eng
+2025-08-18 17:08:56 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/35uchtdorf?lang=eng
+2025-08-18 17:08:56 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/sunday-morning-session?lang=eng
+2025-08-18 17:08:56 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/41rasband?lang=eng
+2025-08-18 17:08:56 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/42porter?lang=eng
+2025-08-18 17:08:56 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/43renlund?lang=eng
+2025-08-18 17:08:56 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/44pieper?lang=eng
+2025-08-18 17:08:56 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/45kearon?lang=eng
+2025-08-18 17:08:56 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/46taylor?lang=eng
+2025-08-18 17:08:56 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/47oaks?lang=eng
+2025-08-18 17:08:56 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/sunday-afternoon-session?lang=eng
+2025-08-18 17:08:56 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/51christofferson?lang=eng
+2025-08-18 17:08:56 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/52godoy?lang=eng
+2025-08-18 17:08:56 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/53stevenson?lang=eng
+2025-08-18 17:08:56 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/54held?lang=eng
+2025-08-18 17:08:56 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/55andersen?lang=eng
+2025-08-18 17:08:56 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/56pace?lang=eng
+2025-08-18 17:08:56 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/57nelson?lang=eng
+2025-08-18 17:08:56 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/saturday-morning-session
+2025-08-18 17:08:56 - ConferenceScraper - INFO - Found 40 talk URLs on conference page: https://www.churchofjesuschrist.org/study/general-conference/2024/04?lang=eng
+2025-08-18 17:08:56 - ConferenceScraper - DEBUG - Found 40 talks for 2024-04
+2025-08-18 17:08:56 - ConferenceScraper - DEBUG - Counting talks for conference: 2024-10
+2025-08-18 17:08:56 - ConferenceScraper - INFO - Scraping conference page: https://www.churchofjesuschrist.org/study/general-conference/2024/10?lang=eng
+2025-08-18 17:08:56 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10?lang=eng (attempt 1/10)
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10?lang=eng (284717 bytes)
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/saturday-morning-session?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/11eyring?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/12andersen?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/13freeman?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/14hirst?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/15renlund?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/16homer?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/17casillas?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/18oaks?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/saturday-afternoon-session?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/21christofferson?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/22teixeira?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/23villar?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/24kearon?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/25buckner?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/26goury?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/27cavalcante?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/28soares?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/saturday-evening-session?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/31gong?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/32yee?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/33mckay?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/34alvarado?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/35bednar?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/sunday-morning-session?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/41holland?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/42browning?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/43hales?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/45budge?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/44stevenson?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/46wilcox?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/47eyring?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/sunday-afternoon-session?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/51uchtdorf?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/52wada?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/53rasband?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/54cook?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/55alliaud?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/56egbo?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/57nelson?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/saturday-morning-session
+2025-08-18 17:08:57 - ConferenceScraper - INFO - Found 41 talk URLs on conference page: https://www.churchofjesuschrist.org/study/general-conference/2024/10?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found 41 talks for 2024-10
+2025-08-18 17:08:57 - ConferenceScraper - INFO - Found 81 total talks across 2 conferences
+2025-08-18 17:08:57 - ConferenceScraper - INFO - Processing conference: 2024-04
+2025-08-18 17:08:57 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04
+2025-08-18 17:08:57 - FileManager - DEBUG - Found 0 existing files in /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04
+2025-08-18 17:08:57 - ConferenceScraper - INFO - Scraping conference page: https://www.churchofjesuschrist.org/study/general-conference/2024/04?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04?lang=eng (attempt 1/10)
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04?lang=eng (286444 bytes)
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/saturday-morning-session?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/11oaks?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/12larson?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/13holland?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/14dennis?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/15dushku?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/16soares?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/17gerard?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/18eyring?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/saturday-afternoon-session?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/21bednar?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/22de-feo?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/23nielson?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/24alonso?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/25gong?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/26nelson?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/27cook?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/saturday-evening-session?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/31bowen?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/32bangerter?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/33spannaus?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/34carpenter?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/35uchtdorf?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/sunday-morning-session?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/41rasband?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/42porter?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/43renlund?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/44pieper?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/45kearon?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/46taylor?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/47oaks?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/sunday-afternoon-session?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/51christofferson?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/52godoy?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/53stevenson?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/54held?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/55andersen?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/56pace?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/57nelson?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/saturday-morning-session
+2025-08-18 17:08:57 - ConferenceScraper - INFO - Found 40 talk URLs on conference page: https://www.churchofjesuschrist.org/study/general-conference/2024/04?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/saturday-morning-session?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/saturday-morning-session?lang=eng (attempt 1/10)
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/saturday-morning-session?lang=eng (132464 bytes)
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Successfully extracted 1906 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/saturday-morning-session?lang=eng
+2025-08-18 17:08:57 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04
+2025-08-18 17:08:57 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04/saturday-morning-sessionlangeng.txt
+2025-08-18 17:08:57 - ConferenceScraper - INFO - Saved talk: saturday-morning-session?lang=eng (1906 chars)
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/11oaks?lang=eng
+2025-08-18 17:08:57 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/11oaks?lang=eng (attempt 1/10)
+2025-08-18 17:08:58 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/11oaks?lang=eng (156245 bytes)
+2025-08-18 17:08:58 - ConferenceScraper - DEBUG - Successfully extracted 9102 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/11oaks?lang=eng
+2025-08-18 17:08:58 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04
+2025-08-18 17:08:58 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04/11oakslangeng.txt
+2025-08-18 17:08:58 - ConferenceScraper - INFO - Saved talk: 11oaks?lang=eng (9102 chars)
+2025-08-18 17:08:58 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/12larson?lang=eng
+2025-08-18 17:08:58 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/12larson?lang=eng (attempt 1/10)
+2025-08-18 17:08:58 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/12larson?lang=eng (137206 bytes)
+2025-08-18 17:08:58 - ConferenceScraper - DEBUG - Successfully extracted 3298 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/12larson?lang=eng
+2025-08-18 17:08:58 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04
+2025-08-18 17:08:58 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04/12larsonlangeng.txt
+2025-08-18 17:08:58 - ConferenceScraper - INFO - Saved talk: 12larson?lang=eng (3298 chars)
+2025-08-18 17:08:58 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/13holland?lang=eng
+2025-08-18 17:08:58 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/13holland?lang=eng (attempt 1/10)
+2025-08-18 17:08:59 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/13holland?lang=eng (208416 bytes)
+2025-08-18 17:08:59 - ConferenceScraper - DEBUG - Successfully extracted 11764 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/13holland?lang=eng
+2025-08-18 17:08:59 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04
+2025-08-18 17:08:59 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04/13hollandlangeng.txt
+2025-08-18 17:08:59 - ConferenceScraper - INFO - Saved talk: 13holland?lang=eng (11764 chars)
+2025-08-18 17:08:59 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/14dennis?lang=eng
+2025-08-18 17:08:59 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/14dennis?lang=eng (attempt 1/10)
+2025-08-18 17:08:59 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/14dennis?lang=eng (254740 bytes)
+2025-08-18 17:08:59 - ConferenceScraper - DEBUG - Successfully extracted 16592 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/14dennis?lang=eng
+2025-08-18 17:08:59 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04
+2025-08-18 17:08:59 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04/14dennislangeng.txt
+2025-08-18 17:08:59 - ConferenceScraper - INFO - Saved talk: 14dennis?lang=eng (16592 chars)
+2025-08-18 17:08:59 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/15dushku?lang=eng
+2025-08-18 17:08:59 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/15dushku?lang=eng (attempt 1/10)
+2025-08-18 17:09:00 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/15dushku?lang=eng (213564 bytes)
+2025-08-18 17:09:00 - ConferenceScraper - DEBUG - Successfully extracted 15110 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/15dushku?lang=eng
+2025-08-18 17:09:00 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04
+2025-08-18 17:09:00 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04/15dushkulangeng.txt
+2025-08-18 17:09:00 - ConferenceScraper - INFO - Saved talk: 15dushku?lang=eng (15110 chars)
+2025-08-18 17:09:00 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/16soares?lang=eng
+2025-08-18 17:09:00 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/16soares?lang=eng (attempt 1/10)
+2025-08-18 17:09:01 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/16soares?lang=eng (180283 bytes)
+2025-08-18 17:09:01 - ConferenceScraper - DEBUG - Successfully extracted 13055 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/16soares?lang=eng
+2025-08-18 17:09:01 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04
+2025-08-18 17:09:01 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04/16soareslangeng.txt
+2025-08-18 17:09:01 - ConferenceScraper - INFO - Saved talk: 16soares?lang=eng (13055 chars)
+2025-08-18 17:09:01 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/17gerard?lang=eng
+2025-08-18 17:09:01 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/17gerard?lang=eng (attempt 1/10)
+2025-08-18 17:09:01 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/17gerard?lang=eng (196190 bytes)
+2025-08-18 17:09:01 - ConferenceScraper - DEBUG - Successfully extracted 10827 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/17gerard?lang=eng
+2025-08-18 17:09:01 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04
+2025-08-18 17:09:01 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04/17gerardlangeng.txt
+2025-08-18 17:09:01 - ConferenceScraper - INFO - Saved talk: 17gerard?lang=eng (10827 chars)
+2025-08-18 17:09:01 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/18eyring?lang=eng
+2025-08-18 17:09:01 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/18eyring?lang=eng (attempt 1/10)
+2025-08-18 17:09:01 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/18eyring?lang=eng (174293 bytes)
+2025-08-18 17:09:01 - ConferenceScraper - DEBUG - Successfully extracted 11950 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/18eyring?lang=eng
+2025-08-18 17:09:01 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04
+2025-08-18 17:09:01 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04/18eyringlangeng.txt
+2025-08-18 17:09:01 - ConferenceScraper - INFO - Saved talk: 18eyring?lang=eng (11950 chars)
+2025-08-18 17:09:01 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/saturday-afternoon-session?lang=eng
+2025-08-18 17:09:01 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/saturday-afternoon-session?lang=eng (attempt 1/10)
+2025-08-18 17:09:02 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/saturday-afternoon-session?lang=eng (132542 bytes)
+2025-08-18 17:09:02 - ConferenceScraper - DEBUG - Successfully extracted 1912 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/saturday-afternoon-session?lang=eng
+2025-08-18 17:09:02 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04
+2025-08-18 17:09:02 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04/saturday-afternoon-sessionlangeng.txt
+2025-08-18 17:09:02 - ConferenceScraper - INFO - Saved talk: saturday-afternoon-session?lang=eng (1912 chars)
+2025-08-18 17:09:02 - ProgressTracker - INFO - Progress: 10/81 (12.3%) - Processed: 10, Skipped: 0, Failed: 0
+2025-08-18 17:09:02 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/21bednar?lang=eng
+2025-08-18 17:09:02 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/21bednar?lang=eng (attempt 1/10)
+2025-08-18 17:09:03 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/21bednar?lang=eng (205572 bytes)
+2025-08-18 17:09:03 - ConferenceScraper - DEBUG - Successfully extracted 13854 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/21bednar?lang=eng
+2025-08-18 17:09:03 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04
+2025-08-18 17:09:03 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04/21bednarlangeng.txt
+2025-08-18 17:09:03 - ConferenceScraper - INFO - Saved talk: 21bednar?lang=eng (13854 chars)
+2025-08-18 17:09:03 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/22de-feo?lang=eng
+2025-08-18 17:09:03 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/22de-feo?lang=eng (attempt 1/10)
+2025-08-18 17:09:03 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/22de-feo?lang=eng (168081 bytes)
+2025-08-18 17:09:03 - ConferenceScraper - DEBUG - Successfully extracted 10333 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/22de-feo?lang=eng
+2025-08-18 17:09:03 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04
+2025-08-18 17:09:03 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04/22de-feolangeng.txt
+2025-08-18 17:09:03 - ConferenceScraper - INFO - Saved talk: 22de-feo?lang=eng (10333 chars)
+2025-08-18 17:09:03 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/23nielson?lang=eng
+2025-08-18 17:09:03 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/23nielson?lang=eng (attempt 1/10)
+2025-08-18 17:09:04 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/23nielson?lang=eng (178895 bytes)
+2025-08-18 17:09:04 - ConferenceScraper - DEBUG - Successfully extracted 12383 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/23nielson?lang=eng
+2025-08-18 17:09:04 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04
+2025-08-18 17:09:04 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04/23nielsonlangeng.txt
+2025-08-18 17:09:04 - ConferenceScraper - INFO - Saved talk: 23nielson?lang=eng (12383 chars)
+2025-08-18 17:09:04 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/24alonso?lang=eng
+2025-08-18 17:09:04 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/24alonso?lang=eng (attempt 1/10)
+2025-08-18 17:09:05 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/24alonso?lang=eng (207152 bytes)
+2025-08-18 17:09:05 - ConferenceScraper - DEBUG - Successfully extracted 11182 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/24alonso?lang=eng
+2025-08-18 17:09:05 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04
+2025-08-18 17:09:05 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04/24alonsolangeng.txt
+2025-08-18 17:09:05 - ConferenceScraper - INFO - Saved talk: 24alonso?lang=eng (11182 chars)
+2025-08-18 17:09:05 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/25gong?lang=eng
+2025-08-18 17:09:05 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/25gong?lang=eng (attempt 1/10)
+2025-08-18 17:09:05 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/25gong?lang=eng (228183 bytes)
+2025-08-18 17:09:05 - ConferenceScraper - DEBUG - Successfully extracted 16353 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/25gong?lang=eng
+2025-08-18 17:09:05 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04
+2025-08-18 17:09:05 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04/25gonglangeng.txt
+2025-08-18 17:09:05 - ConferenceScraper - INFO - Saved talk: 25gong?lang=eng (16353 chars)
+2025-08-18 17:09:05 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/26nelson?lang=eng
+2025-08-18 17:09:05 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/26nelson?lang=eng (attempt 1/10)
+2025-08-18 17:09:06 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/26nelson?lang=eng (221114 bytes)
+2025-08-18 17:09:06 - ConferenceScraper - DEBUG - Successfully extracted 15339 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/26nelson?lang=eng
+2025-08-18 17:09:06 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04
+2025-08-18 17:09:06 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04/26nelsonlangeng.txt
+2025-08-18 17:09:06 - ConferenceScraper - INFO - Saved talk: 26nelson?lang=eng (15339 chars)
+2025-08-18 17:09:06 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/27cook?lang=eng
+2025-08-18 17:09:06 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/27cook?lang=eng (attempt 1/10)
+2025-08-18 17:09:06 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/27cook?lang=eng (215017 bytes)
+2025-08-18 17:09:06 - ConferenceScraper - DEBUG - Successfully extracted 16432 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/27cook?lang=eng
+2025-08-18 17:09:06 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04
+2025-08-18 17:09:06 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04/27cooklangeng.txt
+2025-08-18 17:09:06 - ConferenceScraper - INFO - Saved talk: 27cook?lang=eng (16432 chars)
+2025-08-18 17:09:06 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/saturday-evening-session?lang=eng
+2025-08-18 17:09:06 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/saturday-evening-session?lang=eng (attempt 1/10)
+2025-08-18 17:09:07 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/saturday-evening-session?lang=eng (132479 bytes)
+2025-08-18 17:09:07 - ConferenceScraper - DEBUG - Successfully extracted 1905 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/saturday-evening-session?lang=eng
+2025-08-18 17:09:07 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04
+2025-08-18 17:09:07 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04/saturday-evening-sessionlangeng.txt
+2025-08-18 17:09:07 - ConferenceScraper - INFO - Saved talk: saturday-evening-session?lang=eng (1905 chars)
+2025-08-18 17:09:07 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/31bowen?lang=eng
+2025-08-18 17:09:07 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/31bowen?lang=eng (attempt 1/10)
+2025-08-18 17:09:07 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/31bowen?lang=eng (177352 bytes)
+2025-08-18 17:09:07 - ConferenceScraper - DEBUG - Successfully extracted 12765 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/31bowen?lang=eng
+2025-08-18 17:09:07 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04
+2025-08-18 17:09:07 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04/31bowenlangeng.txt
+2025-08-18 17:09:07 - ConferenceScraper - INFO - Saved talk: 31bowen?lang=eng (12765 chars)
+2025-08-18 17:09:07 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/32bangerter?lang=eng
+2025-08-18 17:09:07 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/32bangerter?lang=eng (attempt 1/10)
+2025-08-18 17:09:08 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/32bangerter?lang=eng (194967 bytes)
+2025-08-18 17:09:08 - ConferenceScraper - DEBUG - Successfully extracted 12685 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/32bangerter?lang=eng
+2025-08-18 17:09:08 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04
+2025-08-18 17:09:08 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04/32bangerterlangeng.txt
+2025-08-18 17:09:08 - ConferenceScraper - INFO - Saved talk: 32bangerter?lang=eng (12685 chars)
+2025-08-18 17:09:08 - ProgressTracker - INFO - Progress: 20/81 (24.7%) - Processed: 20, Skipped: 0, Failed: 0
+2025-08-18 17:09:08 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/33spannaus?lang=eng
+2025-08-18 17:09:08 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/33spannaus?lang=eng (attempt 1/10)
+2025-08-18 17:09:09 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/33spannaus?lang=eng (205560 bytes)
+2025-08-18 17:09:09 - ConferenceScraper - DEBUG - Successfully extracted 11183 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/33spannaus?lang=eng
+2025-08-18 17:09:09 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04
+2025-08-18 17:09:09 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04/33spannauslangeng.txt
+2025-08-18 17:09:09 - ConferenceScraper - INFO - Saved talk: 33spannaus?lang=eng (11183 chars)
+2025-08-18 17:09:09 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/34carpenter?lang=eng
+2025-08-18 17:09:09 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/34carpenter?lang=eng (attempt 1/10)
+2025-08-18 17:09:10 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/34carpenter?lang=eng (211398 bytes)
+2025-08-18 17:09:10 - ConferenceScraper - DEBUG - Successfully extracted 16770 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/34carpenter?lang=eng
+2025-08-18 17:09:10 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04
+2025-08-18 17:09:10 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04/34carpenterlangeng.txt
+2025-08-18 17:09:10 - ConferenceScraper - INFO - Saved talk: 34carpenter?lang=eng (16770 chars)
+2025-08-18 17:09:10 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/35uchtdorf?lang=eng
+2025-08-18 17:09:10 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/35uchtdorf?lang=eng (attempt 1/10)
+2025-08-18 17:09:10 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/35uchtdorf?lang=eng (215322 bytes)
+2025-08-18 17:09:10 - ConferenceScraper - DEBUG - Successfully extracted 15129 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/35uchtdorf?lang=eng
+2025-08-18 17:09:10 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04
+2025-08-18 17:09:10 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04/35uchtdorflangeng.txt
+2025-08-18 17:09:10 - ConferenceScraper - INFO - Saved talk: 35uchtdorf?lang=eng (15129 chars)
+2025-08-18 17:09:10 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/sunday-morning-session?lang=eng
+2025-08-18 17:09:10 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/sunday-morning-session?lang=eng (attempt 1/10)
+2025-08-18 17:09:11 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/sunday-morning-session?lang=eng (132443 bytes)
+2025-08-18 17:09:11 - ConferenceScraper - DEBUG - Successfully extracted 1899 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/sunday-morning-session?lang=eng
+2025-08-18 17:09:11 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04
+2025-08-18 17:09:11 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04/sunday-morning-sessionlangeng.txt
+2025-08-18 17:09:11 - ConferenceScraper - INFO - Saved talk: sunday-morning-session?lang=eng (1899 chars)
+2025-08-18 17:09:11 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/41rasband?lang=eng
+2025-08-18 17:09:11 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/41rasband?lang=eng (attempt 1/10)
+2025-08-18 17:09:11 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/41rasband?lang=eng (226021 bytes)
+2025-08-18 17:09:11 - ConferenceScraper - DEBUG - Successfully extracted 14467 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/41rasband?lang=eng
+2025-08-18 17:09:11 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04
+2025-08-18 17:09:11 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04/41rasbandlangeng.txt
+2025-08-18 17:09:11 - ConferenceScraper - INFO - Saved talk: 41rasband?lang=eng (14467 chars)
+2025-08-18 17:09:11 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/42porter?lang=eng
+2025-08-18 17:09:11 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/42porter?lang=eng (attempt 1/10)
+2025-08-18 17:09:12 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/42porter?lang=eng (190615 bytes)
+2025-08-18 17:09:12 - ConferenceScraper - DEBUG - Successfully extracted 9085 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/42porter?lang=eng
+2025-08-18 17:09:12 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04
+2025-08-18 17:09:12 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04/42porterlangeng.txt
+2025-08-18 17:09:12 - ConferenceScraper - INFO - Saved talk: 42porter?lang=eng (9085 chars)
+2025-08-18 17:09:12 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/43renlund?lang=eng
+2025-08-18 17:09:12 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/43renlund?lang=eng (attempt 1/10)
+2025-08-18 17:09:12 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/43renlund?lang=eng (219888 bytes)
+2025-08-18 17:09:12 - ConferenceScraper - DEBUG - Successfully extracted 15880 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/43renlund?lang=eng
+2025-08-18 17:09:12 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04
+2025-08-18 17:09:12 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04/43renlundlangeng.txt
+2025-08-18 17:09:12 - ConferenceScraper - INFO - Saved talk: 43renlund?lang=eng (15880 chars)
+2025-08-18 17:09:12 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/44pieper?lang=eng
+2025-08-18 17:09:12 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/44pieper?lang=eng (attempt 1/10)
+2025-08-18 17:09:13 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/44pieper?lang=eng (178262 bytes)
+2025-08-18 17:09:13 - ConferenceScraper - DEBUG - Successfully extracted 11747 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/44pieper?lang=eng
+2025-08-18 17:09:13 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04
+2025-08-18 17:09:13 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04/44pieperlangeng.txt
+2025-08-18 17:09:13 - ConferenceScraper - INFO - Saved talk: 44pieper?lang=eng (11747 chars)
+2025-08-18 17:09:13 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/45kearon?lang=eng
+2025-08-18 17:09:13 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/45kearon?lang=eng (attempt 1/10)
+2025-08-18 17:09:13 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/45kearon?lang=eng (199190 bytes)
+2025-08-18 17:09:13 - ConferenceScraper - DEBUG - Successfully extracted 12061 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/45kearon?lang=eng
+2025-08-18 17:09:13 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04
+2025-08-18 17:09:13 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04/45kearonlangeng.txt
+2025-08-18 17:09:13 - ConferenceScraper - INFO - Saved talk: 45kearon?lang=eng (12061 chars)
+2025-08-18 17:09:13 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/46taylor?lang=eng
+2025-08-18 17:09:13 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/46taylor?lang=eng (attempt 1/10)
+2025-08-18 17:09:15 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/46taylor?lang=eng (272060 bytes)
+2025-08-18 17:09:15 - ConferenceScraper - DEBUG - Successfully extracted 15688 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/46taylor?lang=eng
+2025-08-18 17:09:15 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04
+2025-08-18 17:09:15 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04/46taylorlangeng.txt
+2025-08-18 17:09:15 - ConferenceScraper - INFO - Saved talk: 46taylor?lang=eng (15688 chars)
+2025-08-18 17:09:15 - ProgressTracker - INFO - Progress: 30/81 (37.0%) - Processed: 30, Skipped: 0, Failed: 0
+2025-08-18 17:09:15 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/47oaks?lang=eng
+2025-08-18 17:09:15 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/47oaks?lang=eng (attempt 1/10)
+2025-08-18 17:09:15 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/47oaks?lang=eng (223609 bytes)
+2025-08-18 17:09:15 - ConferenceScraper - DEBUG - Successfully extracted 13175 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/47oaks?lang=eng
+2025-08-18 17:09:15 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04
+2025-08-18 17:09:15 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04/47oakslangeng.txt
+2025-08-18 17:09:15 - ConferenceScraper - INFO - Saved talk: 47oaks?lang=eng (13175 chars)
+2025-08-18 17:09:15 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/sunday-afternoon-session?lang=eng
+2025-08-18 17:09:15 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/sunday-afternoon-session?lang=eng (attempt 1/10)
+2025-08-18 17:09:16 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/sunday-afternoon-session?lang=eng (132502 bytes)
+2025-08-18 17:09:16 - ConferenceScraper - DEBUG - Successfully extracted 1906 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/sunday-afternoon-session?lang=eng
+2025-08-18 17:09:16 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04
+2025-08-18 17:09:16 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04/sunday-afternoon-sessionlangeng.txt
+2025-08-18 17:09:16 - ConferenceScraper - INFO - Saved talk: sunday-afternoon-session?lang=eng (1906 chars)
+2025-08-18 17:09:16 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/51christofferson?lang=eng
+2025-08-18 17:09:16 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/51christofferson?lang=eng (attempt 1/10)
+2025-08-18 17:09:17 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/51christofferson?lang=eng (228376 bytes)
+2025-08-18 17:09:17 - ConferenceScraper - DEBUG - Successfully extracted 15901 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/51christofferson?lang=eng
+2025-08-18 17:09:17 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04
+2025-08-18 17:09:17 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04/51christoffersonlangeng.txt
+2025-08-18 17:09:17 - ConferenceScraper - INFO - Saved talk: 51christofferson?lang=eng (15901 chars)
+2025-08-18 17:09:17 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/52godoy?lang=eng
+2025-08-18 17:09:17 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/52godoy?lang=eng (attempt 1/10)
+2025-08-18 17:09:18 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/52godoy?lang=eng (177632 bytes)
+2025-08-18 17:09:18 - ConferenceScraper - DEBUG - Successfully extracted 10038 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/52godoy?lang=eng
+2025-08-18 17:09:18 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04
+2025-08-18 17:09:18 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04/52godoylangeng.txt
+2025-08-18 17:09:18 - ConferenceScraper - INFO - Saved talk: 52godoy?lang=eng (10038 chars)
+2025-08-18 17:09:18 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/53stevenson?lang=eng
+2025-08-18 17:09:18 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/53stevenson?lang=eng (attempt 1/10)
+2025-08-18 17:09:18 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/53stevenson?lang=eng (217572 bytes)
+2025-08-18 17:09:19 - ConferenceScraper - DEBUG - Successfully extracted 14833 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/53stevenson?lang=eng
+2025-08-18 17:09:19 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04
+2025-08-18 17:09:19 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04/53stevensonlangeng.txt
+2025-08-18 17:09:19 - ConferenceScraper - INFO - Saved talk: 53stevenson?lang=eng (14833 chars)
+2025-08-18 17:09:19 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/54held?lang=eng
+2025-08-18 17:09:19 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/54held?lang=eng (attempt 1/10)
+2025-08-18 17:09:19 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/54held?lang=eng (177206 bytes)
+2025-08-18 17:09:19 - ConferenceScraper - DEBUG - Successfully extracted 10548 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/54held?lang=eng
+2025-08-18 17:09:19 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04
+2025-08-18 17:09:19 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04/54heldlangeng.txt
+2025-08-18 17:09:19 - ConferenceScraper - INFO - Saved talk: 54held?lang=eng (10548 chars)
+2025-08-18 17:09:19 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/55andersen?lang=eng
+2025-08-18 17:09:19 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/55andersen?lang=eng (attempt 1/10)
+2025-08-18 17:09:19 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/55andersen?lang=eng (223298 bytes)
+2025-08-18 17:09:19 - ConferenceScraper - DEBUG - Successfully extracted 15096 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/55andersen?lang=eng
+2025-08-18 17:09:19 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04
+2025-08-18 17:09:19 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04/55andersenlangeng.txt
+2025-08-18 17:09:19 - ConferenceScraper - INFO - Saved talk: 55andersen?lang=eng (15096 chars)
+2025-08-18 17:09:19 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/56pace?lang=eng
+2025-08-18 17:09:19 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/56pace?lang=eng (attempt 1/10)
+2025-08-18 17:09:20 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/56pace?lang=eng (204506 bytes)
+2025-08-18 17:09:20 - ConferenceScraper - DEBUG - Successfully extracted 15360 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/56pace?lang=eng
+2025-08-18 17:09:20 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04
+2025-08-18 17:09:20 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04/56pacelangeng.txt
+2025-08-18 17:09:20 - ConferenceScraper - INFO - Saved talk: 56pace?lang=eng (15360 chars)
+2025-08-18 17:09:20 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/57nelson?lang=eng
+2025-08-18 17:09:20 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/57nelson?lang=eng (attempt 1/10)
+2025-08-18 17:09:20 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/57nelson?lang=eng (203344 bytes)
+2025-08-18 17:09:20 - ConferenceScraper - DEBUG - Successfully extracted 13331 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/57nelson?lang=eng
+2025-08-18 17:09:20 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04
+2025-08-18 17:09:20 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04/57nelsonlangeng.txt
+2025-08-18 17:09:20 - ConferenceScraper - INFO - Saved talk: 57nelson?lang=eng (13331 chars)
+2025-08-18 17:09:20 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/saturday-morning-session
+2025-08-18 17:09:20 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/saturday-morning-session (attempt 1/10)
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/04/saturday-morning-session (132464 bytes)
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Successfully extracted 1906 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/04/saturday-morning-session
+2025-08-18 17:09:21 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04
+2025-08-18 17:09:21 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-04/saturday-morning-session.txt
+2025-08-18 17:09:21 - ConferenceScraper - INFO - Saved talk: saturday-morning-session (1906 chars)
+2025-08-18 17:09:21 - ProgressTracker - INFO - Progress: 40/81 (49.4%) - Processed: 40, Skipped: 0, Failed: 0
+2025-08-18 17:09:21 - ConferenceScraper - INFO - Processing conference: 2024-10
+2025-08-18 17:09:21 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10
+2025-08-18 17:09:21 - FileManager - DEBUG - Found 0 existing files in /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10
+2025-08-18 17:09:21 - ConferenceScraper - INFO - Scraping conference page: https://www.churchofjesuschrist.org/study/general-conference/2024/10?lang=eng
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10?lang=eng (attempt 1/10)
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10?lang=eng (284717 bytes)
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/saturday-morning-session?lang=eng
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/11eyring?lang=eng
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/12andersen?lang=eng
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/13freeman?lang=eng
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/14hirst?lang=eng
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/15renlund?lang=eng
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/16homer?lang=eng
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/17casillas?lang=eng
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/18oaks?lang=eng
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/saturday-afternoon-session?lang=eng
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/21christofferson?lang=eng
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/22teixeira?lang=eng
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/23villar?lang=eng
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/24kearon?lang=eng
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/25buckner?lang=eng
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/26goury?lang=eng
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/27cavalcante?lang=eng
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/28soares?lang=eng
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/saturday-evening-session?lang=eng
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/31gong?lang=eng
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/32yee?lang=eng
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/33mckay?lang=eng
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/34alvarado?lang=eng
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/35bednar?lang=eng
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/sunday-morning-session?lang=eng
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/41holland?lang=eng
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/42browning?lang=eng
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/43hales?lang=eng
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/45budge?lang=eng
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/44stevenson?lang=eng
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/46wilcox?lang=eng
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/47eyring?lang=eng
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/sunday-afternoon-session?lang=eng
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/51uchtdorf?lang=eng
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/52wada?lang=eng
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/53rasband?lang=eng
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/54cook?lang=eng
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/55alliaud?lang=eng
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/56egbo?lang=eng
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/57nelson?lang=eng
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Found talk URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/saturday-morning-session
+2025-08-18 17:09:21 - ConferenceScraper - INFO - Found 41 talk URLs on conference page: https://www.churchofjesuschrist.org/study/general-conference/2024/10?lang=eng
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/saturday-morning-session?lang=eng
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/saturday-morning-session?lang=eng (attempt 1/10)
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/saturday-morning-session?lang=eng (132819 bytes)
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Successfully extracted 1995 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/saturday-morning-session?lang=eng
+2025-08-18 17:09:21 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10
+2025-08-18 17:09:21 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10/saturday-morning-sessionlangeng.txt
+2025-08-18 17:09:21 - ConferenceScraper - INFO - Saved talk: saturday-morning-session?lang=eng (1995 chars)
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/11eyring?lang=eng
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/11eyring?lang=eng (attempt 1/10)
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/11eyring?lang=eng (143735 bytes)
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Successfully extracted 4662 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/11eyring?lang=eng
+2025-08-18 17:09:21 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10
+2025-08-18 17:09:21 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10/11eyringlangeng.txt
+2025-08-18 17:09:21 - ConferenceScraper - INFO - Saved talk: 11eyring?lang=eng (4662 chars)
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/12andersen?lang=eng
+2025-08-18 17:09:21 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/12andersen?lang=eng (attempt 1/10)
+2025-08-18 17:09:22 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/12andersen?lang=eng (223748 bytes)
+2025-08-18 17:09:22 - ConferenceScraper - DEBUG - Successfully extracted 14884 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/12andersen?lang=eng
+2025-08-18 17:09:22 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10
+2025-08-18 17:09:22 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10/12andersenlangeng.txt
+2025-08-18 17:09:22 - ConferenceScraper - INFO - Saved talk: 12andersen?lang=eng (14884 chars)
+2025-08-18 17:09:22 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/13freeman?lang=eng
+2025-08-18 17:09:22 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/13freeman?lang=eng (attempt 1/10)
+2025-08-18 17:09:22 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/13freeman?lang=eng (239828 bytes)
+2025-08-18 17:09:22 - ConferenceScraper - DEBUG - Successfully extracted 17514 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/13freeman?lang=eng
+2025-08-18 17:09:22 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10
+2025-08-18 17:09:22 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10/13freemanlangeng.txt
+2025-08-18 17:09:22 - ConferenceScraper - INFO - Saved talk: 13freeman?lang=eng (17514 chars)
+2025-08-18 17:09:22 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/14hirst?lang=eng
+2025-08-18 17:09:22 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/14hirst?lang=eng (attempt 1/10)
+2025-08-18 17:09:23 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/14hirst?lang=eng (212486 bytes)
+2025-08-18 17:09:23 - ConferenceScraper - DEBUG - Successfully extracted 14770 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/14hirst?lang=eng
+2025-08-18 17:09:23 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10
+2025-08-18 17:09:23 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10/14hirstlangeng.txt
+2025-08-18 17:09:23 - ConferenceScraper - INFO - Saved talk: 14hirst?lang=eng (14770 chars)
+2025-08-18 17:09:23 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/15renlund?lang=eng
+2025-08-18 17:09:23 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/15renlund?lang=eng (attempt 1/10)
+2025-08-18 17:09:23 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/15renlund?lang=eng (228391 bytes)
+2025-08-18 17:09:23 - ConferenceScraper - DEBUG - Successfully extracted 17102 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/15renlund?lang=eng
+2025-08-18 17:09:23 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10
+2025-08-18 17:09:23 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10/15renlundlangeng.txt
+2025-08-18 17:09:23 - ConferenceScraper - INFO - Saved talk: 15renlund?lang=eng (17102 chars)
+2025-08-18 17:09:23 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/16homer?lang=eng
+2025-08-18 17:09:23 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/16homer?lang=eng (attempt 1/10)
+2025-08-18 17:09:23 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/16homer?lang=eng (198397 bytes)
+2025-08-18 17:09:23 - ConferenceScraper - DEBUG - Successfully extracted 11821 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/16homer?lang=eng
+2025-08-18 17:09:23 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10
+2025-08-18 17:09:23 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10/16homerlangeng.txt
+2025-08-18 17:09:23 - ConferenceScraper - INFO - Saved talk: 16homer?lang=eng (11821 chars)
+2025-08-18 17:09:23 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/17casillas?lang=eng
+2025-08-18 17:09:23 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/17casillas?lang=eng (attempt 1/10)
+2025-08-18 17:09:24 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/17casillas?lang=eng (163219 bytes)
+2025-08-18 17:09:24 - ConferenceScraper - DEBUG - Successfully extracted 9542 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/17casillas?lang=eng
+2025-08-18 17:09:24 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10
+2025-08-18 17:09:24 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10/17casillaslangeng.txt
+2025-08-18 17:09:24 - ConferenceScraper - INFO - Saved talk: 17casillas?lang=eng (9542 chars)
+2025-08-18 17:09:24 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/18oaks?lang=eng
+2025-08-18 17:09:24 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/18oaks?lang=eng (attempt 1/10)
+2025-08-18 17:09:24 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/18oaks?lang=eng (212755 bytes)
+2025-08-18 17:09:24 - ConferenceScraper - DEBUG - Successfully extracted 11853 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/18oaks?lang=eng
+2025-08-18 17:09:24 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10
+2025-08-18 17:09:24 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10/18oakslangeng.txt
+2025-08-18 17:09:24 - ConferenceScraper - INFO - Saved talk: 18oaks?lang=eng (11853 chars)
+2025-08-18 17:09:24 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/saturday-afternoon-session?lang=eng
+2025-08-18 17:09:24 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/saturday-afternoon-session?lang=eng (attempt 1/10)
+2025-08-18 17:09:24 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/saturday-afternoon-session?lang=eng (132901 bytes)
+2025-08-18 17:09:24 - ConferenceScraper - DEBUG - Successfully extracted 2001 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/saturday-afternoon-session?lang=eng
+2025-08-18 17:09:24 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10
+2025-08-18 17:09:24 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10/saturday-afternoon-sessionlangeng.txt
+2025-08-18 17:09:24 - ConferenceScraper - INFO - Saved talk: saturday-afternoon-session?lang=eng (2001 chars)
+2025-08-18 17:09:24 - ProgressTracker - INFO - Progress: 50/81 (61.7%) - Processed: 50, Skipped: 0, Failed: 0
+2025-08-18 17:09:24 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/21christofferson?lang=eng
+2025-08-18 17:09:24 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/21christofferson?lang=eng (attempt 1/10)
+2025-08-18 17:09:25 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/21christofferson?lang=eng (200461 bytes)
+2025-08-18 17:09:25 - ConferenceScraper - DEBUG - Successfully extracted 13742 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/21christofferson?lang=eng
+2025-08-18 17:09:25 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10
+2025-08-18 17:09:25 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10/21christoffersonlangeng.txt
+2025-08-18 17:09:25 - ConferenceScraper - INFO - Saved talk: 21christofferson?lang=eng (13742 chars)
+2025-08-18 17:09:25 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/22teixeira?lang=eng
+2025-08-18 17:09:25 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/22teixeira?lang=eng (attempt 1/10)
+2025-08-18 17:09:25 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/22teixeira?lang=eng (161809 bytes)
+2025-08-18 17:09:25 - ConferenceScraper - DEBUG - Successfully extracted 10525 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/22teixeira?lang=eng
+2025-08-18 17:09:25 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10
+2025-08-18 17:09:25 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10/22teixeiralangeng.txt
+2025-08-18 17:09:25 - ConferenceScraper - INFO - Saved talk: 22teixeira?lang=eng (10525 chars)
+2025-08-18 17:09:25 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/23villar?lang=eng
+2025-08-18 17:09:25 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/23villar?lang=eng (attempt 1/10)
+2025-08-18 17:09:25 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/23villar?lang=eng (184739 bytes)
+2025-08-18 17:09:25 - ConferenceScraper - DEBUG - Successfully extracted 11085 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/23villar?lang=eng
+2025-08-18 17:09:25 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10
+2025-08-18 17:09:25 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10/23villarlangeng.txt
+2025-08-18 17:09:25 - ConferenceScraper - INFO - Saved talk: 23villar?lang=eng (11085 chars)
+2025-08-18 17:09:25 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/24kearon?lang=eng
+2025-08-18 17:09:25 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/24kearon?lang=eng (attempt 1/10)
+2025-08-18 17:09:26 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/24kearon?lang=eng (194151 bytes)
+2025-08-18 17:09:26 - ConferenceScraper - DEBUG - Successfully extracted 14221 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/24kearon?lang=eng
+2025-08-18 17:09:26 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10
+2025-08-18 17:09:26 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10/24kearonlangeng.txt
+2025-08-18 17:09:26 - ConferenceScraper - INFO - Saved talk: 24kearon?lang=eng (14221 chars)
+2025-08-18 17:09:26 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/25buckner?lang=eng
+2025-08-18 17:09:26 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/25buckner?lang=eng (attempt 1/10)
+2025-08-18 17:09:26 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/25buckner?lang=eng (211604 bytes)
+2025-08-18 17:09:26 - ConferenceScraper - DEBUG - Successfully extracted 11889 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/25buckner?lang=eng
+2025-08-18 17:09:26 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10
+2025-08-18 17:09:26 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10/25bucknerlangeng.txt
+2025-08-18 17:09:26 - ConferenceScraper - INFO - Saved talk: 25buckner?lang=eng (11889 chars)
+2025-08-18 17:09:26 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/26goury?lang=eng
+2025-08-18 17:09:26 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/26goury?lang=eng (attempt 1/10)
+2025-08-18 17:09:26 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/26goury?lang=eng (164088 bytes)
+2025-08-18 17:09:26 - ConferenceScraper - DEBUG - Successfully extracted 9935 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/26goury?lang=eng
+2025-08-18 17:09:26 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10
+2025-08-18 17:09:26 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10/26gourylangeng.txt
+2025-08-18 17:09:26 - ConferenceScraper - INFO - Saved talk: 26goury?lang=eng (9935 chars)
+2025-08-18 17:09:26 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/27cavalcante?lang=eng
+2025-08-18 17:09:26 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/27cavalcante?lang=eng (attempt 1/10)
+2025-08-18 17:09:27 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/27cavalcante?lang=eng (197679 bytes)
+2025-08-18 17:09:27 - ConferenceScraper - DEBUG - Successfully extracted 11714 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/27cavalcante?lang=eng
+2025-08-18 17:09:27 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10
+2025-08-18 17:09:27 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10/27cavalcantelangeng.txt
+2025-08-18 17:09:27 - ConferenceScraper - INFO - Saved talk: 27cavalcante?lang=eng (11714 chars)
+2025-08-18 17:09:27 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/28soares?lang=eng
+2025-08-18 17:09:27 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/28soares?lang=eng (attempt 1/10)
+2025-08-18 17:09:27 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/28soares?lang=eng (203238 bytes)
+2025-08-18 17:09:27 - ConferenceScraper - DEBUG - Successfully extracted 14109 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/28soares?lang=eng
+2025-08-18 17:09:27 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10
+2025-08-18 17:09:27 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10/28soareslangeng.txt
+2025-08-18 17:09:27 - ConferenceScraper - INFO - Saved talk: 28soares?lang=eng (14109 chars)
+2025-08-18 17:09:27 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/saturday-evening-session?lang=eng
+2025-08-18 17:09:27 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/saturday-evening-session?lang=eng (attempt 1/10)
+2025-08-18 17:09:27 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/saturday-evening-session?lang=eng (132832 bytes)
+2025-08-18 17:09:27 - ConferenceScraper - DEBUG - Successfully extracted 1994 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/saturday-evening-session?lang=eng
+2025-08-18 17:09:27 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10
+2025-08-18 17:09:27 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10/saturday-evening-sessionlangeng.txt
+2025-08-18 17:09:27 - ConferenceScraper - INFO - Saved talk: saturday-evening-session?lang=eng (1994 chars)
+2025-08-18 17:09:27 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/31gong?lang=eng
+2025-08-18 17:09:27 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/31gong?lang=eng (attempt 1/10)
+2025-08-18 17:09:27 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/31gong?lang=eng (203046 bytes)
+2025-08-18 17:09:27 - ConferenceScraper - DEBUG - Successfully extracted 18181 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/31gong?lang=eng
+2025-08-18 17:09:27 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10
+2025-08-18 17:09:27 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10/31gonglangeng.txt
+2025-08-18 17:09:27 - ConferenceScraper - INFO - Saved talk: 31gong?lang=eng (18181 chars)
+2025-08-18 17:09:27 - ProgressTracker - INFO - Progress: 60/81 (74.1%) - Processed: 60, Skipped: 0, Failed: 0
+2025-08-18 17:09:27 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/32yee?lang=eng
+2025-08-18 17:09:27 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/32yee?lang=eng (attempt 1/10)
+2025-08-18 17:09:28 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/32yee?lang=eng (266896 bytes)
+2025-08-18 17:09:28 - ConferenceScraper - DEBUG - Successfully extracted 18674 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/32yee?lang=eng
+2025-08-18 17:09:28 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10
+2025-08-18 17:09:28 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10/32yeelangeng.txt
+2025-08-18 17:09:28 - ConferenceScraper - INFO - Saved talk: 32yee?lang=eng (18674 chars)
+2025-08-18 17:09:28 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/33mckay?lang=eng
+2025-08-18 17:09:28 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/33mckay?lang=eng (attempt 1/10)
+2025-08-18 17:09:28 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/33mckay?lang=eng (199350 bytes)
+2025-08-18 17:09:28 - ConferenceScraper - DEBUG - Successfully extracted 10393 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/33mckay?lang=eng
+2025-08-18 17:09:28 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10
+2025-08-18 17:09:28 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10/33mckaylangeng.txt
+2025-08-18 17:09:28 - ConferenceScraper - INFO - Saved talk: 33mckay?lang=eng (10393 chars)
+2025-08-18 17:09:28 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/34alvarado?lang=eng
+2025-08-18 17:09:28 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/34alvarado?lang=eng (attempt 1/10)
+2025-08-18 17:09:28 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/34alvarado?lang=eng (206203 bytes)
+2025-08-18 17:09:29 - ConferenceScraper - DEBUG - Successfully extracted 15221 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/34alvarado?lang=eng
+2025-08-18 17:09:29 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10
+2025-08-18 17:09:29 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10/34alvaradolangeng.txt
+2025-08-18 17:09:29 - ConferenceScraper - INFO - Saved talk: 34alvarado?lang=eng (15221 chars)
+2025-08-18 17:09:29 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/35bednar?lang=eng
+2025-08-18 17:09:29 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/35bednar?lang=eng (attempt 1/10)
+2025-08-18 17:09:29 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/35bednar?lang=eng (224121 bytes)
+2025-08-18 17:09:29 - ConferenceScraper - DEBUG - Successfully extracted 14304 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/35bednar?lang=eng
+2025-08-18 17:09:29 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10
+2025-08-18 17:09:29 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10/35bednarlangeng.txt
+2025-08-18 17:09:29 - ConferenceScraper - INFO - Saved talk: 35bednar?lang=eng (14304 chars)
+2025-08-18 17:09:29 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/sunday-morning-session?lang=eng
+2025-08-18 17:09:29 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/sunday-morning-session?lang=eng (attempt 1/10)
+2025-08-18 17:09:29 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/sunday-morning-session?lang=eng (132787 bytes)
+2025-08-18 17:09:29 - ConferenceScraper - DEBUG - Successfully extracted 1989 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/sunday-morning-session?lang=eng
+2025-08-18 17:09:29 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10
+2025-08-18 17:09:29 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10/sunday-morning-sessionlangeng.txt
+2025-08-18 17:09:29 - ConferenceScraper - INFO - Saved talk: sunday-morning-session?lang=eng (1989 chars)
+2025-08-18 17:09:29 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/41holland?lang=eng
+2025-08-18 17:09:29 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/41holland?lang=eng (attempt 1/10)
+2025-08-18 17:09:30 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/41holland?lang=eng (188325 bytes)
+2025-08-18 17:09:30 - ConferenceScraper - DEBUG - Successfully extracted 10978 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/41holland?lang=eng
+2025-08-18 17:09:30 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10
+2025-08-18 17:09:30 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10/41hollandlangeng.txt
+2025-08-18 17:09:30 - ConferenceScraper - INFO - Saved talk: 41holland?lang=eng (10978 chars)
+2025-08-18 17:09:30 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/42browning?lang=eng
+2025-08-18 17:09:30 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/42browning?lang=eng (attempt 1/10)
+2025-08-18 17:09:30 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/42browning?lang=eng (195121 bytes)
+2025-08-18 17:09:30 - ConferenceScraper - DEBUG - Successfully extracted 14461 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/42browning?lang=eng
+2025-08-18 17:09:30 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10
+2025-08-18 17:09:30 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10/42browninglangeng.txt
+2025-08-18 17:09:30 - ConferenceScraper - INFO - Saved talk: 42browning?lang=eng (14461 chars)
+2025-08-18 17:09:30 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/43hales?lang=eng
+2025-08-18 17:09:30 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/43hales?lang=eng (attempt 1/10)
+2025-08-18 17:09:30 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/43hales?lang=eng (187026 bytes)
+2025-08-18 17:09:30 - ConferenceScraper - DEBUG - Successfully extracted 13105 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/43hales?lang=eng
+2025-08-18 17:09:30 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10
+2025-08-18 17:09:30 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10/43haleslangeng.txt
+2025-08-18 17:09:30 - ConferenceScraper - INFO - Saved talk: 43hales?lang=eng (13105 chars)
+2025-08-18 17:09:30 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/45budge?lang=eng
+2025-08-18 17:09:30 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/45budge?lang=eng (attempt 1/10)
+2025-08-18 17:09:31 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/45budge?lang=eng (227139 bytes)
+2025-08-18 17:09:31 - ConferenceScraper - DEBUG - Successfully extracted 16292 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/45budge?lang=eng
+2025-08-18 17:09:31 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10
+2025-08-18 17:09:31 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10/45budgelangeng.txt
+2025-08-18 17:09:31 - ConferenceScraper - INFO - Saved talk: 45budge?lang=eng (16292 chars)
+2025-08-18 17:09:31 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/44stevenson?lang=eng
+2025-08-18 17:09:31 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/44stevenson?lang=eng (attempt 1/10)
+2025-08-18 17:09:31 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/44stevenson?lang=eng (240550 bytes)
+2025-08-18 17:09:31 - ConferenceScraper - DEBUG - Successfully extracted 15135 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/44stevenson?lang=eng
+2025-08-18 17:09:31 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10
+2025-08-18 17:09:31 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10/44stevensonlangeng.txt
+2025-08-18 17:09:31 - ConferenceScraper - INFO - Saved talk: 44stevenson?lang=eng (15135 chars)
+2025-08-18 17:09:31 - ProgressTracker - INFO - Progress: 70/81 (86.4%) - Processed: 70, Skipped: 0, Failed: 0
+2025-08-18 17:09:31 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/46wilcox?lang=eng
+2025-08-18 17:09:31 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/46wilcox?lang=eng (attempt 1/10)
+2025-08-18 17:09:32 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/46wilcox?lang=eng (223450 bytes)
+2025-08-18 17:09:32 - ConferenceScraper - DEBUG - Successfully extracted 13860 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/46wilcox?lang=eng
+2025-08-18 17:09:32 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10
+2025-08-18 17:09:32 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10/46wilcoxlangeng.txt
+2025-08-18 17:09:32 - ConferenceScraper - INFO - Saved talk: 46wilcox?lang=eng (13860 chars)
+2025-08-18 17:09:32 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/47eyring?lang=eng
+2025-08-18 17:09:32 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/47eyring?lang=eng (attempt 1/10)
+2025-08-18 17:09:32 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/47eyring?lang=eng (176457 bytes)
+2025-08-18 17:09:32 - ConferenceScraper - DEBUG - Successfully extracted 12152 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/47eyring?lang=eng
+2025-08-18 17:09:32 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10
+2025-08-18 17:09:32 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10/47eyringlangeng.txt
+2025-08-18 17:09:32 - ConferenceScraper - INFO - Saved talk: 47eyring?lang=eng (12152 chars)
+2025-08-18 17:09:32 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/sunday-afternoon-session?lang=eng
+2025-08-18 17:09:32 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/sunday-afternoon-session?lang=eng (attempt 1/10)
+2025-08-18 17:09:32 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/sunday-afternoon-session?lang=eng (132840 bytes)
+2025-08-18 17:09:32 - ConferenceScraper - DEBUG - Successfully extracted 1994 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/sunday-afternoon-session?lang=eng
+2025-08-18 17:09:32 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10
+2025-08-18 17:09:32 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10/sunday-afternoon-sessionlangeng.txt
+2025-08-18 17:09:32 - ConferenceScraper - INFO - Saved talk: sunday-afternoon-session?lang=eng (1994 chars)
+2025-08-18 17:09:32 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/51uchtdorf?lang=eng
+2025-08-18 17:09:32 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/51uchtdorf?lang=eng (attempt 1/10)
+2025-08-18 17:09:33 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/51uchtdorf?lang=eng (210961 bytes)
+2025-08-18 17:09:33 - ConferenceScraper - DEBUG - Successfully extracted 16350 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/51uchtdorf?lang=eng
+2025-08-18 17:09:33 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10
+2025-08-18 17:09:33 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10/51uchtdorflangeng.txt
+2025-08-18 17:09:33 - ConferenceScraper - INFO - Saved talk: 51uchtdorf?lang=eng (16350 chars)
+2025-08-18 17:09:33 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/52wada?lang=eng
+2025-08-18 17:09:33 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/52wada?lang=eng (attempt 1/10)
+2025-08-18 17:09:33 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/52wada?lang=eng (204053 bytes)
+2025-08-18 17:09:33 - ConferenceScraper - DEBUG - Successfully extracted 12328 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/52wada?lang=eng
+2025-08-18 17:09:33 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10
+2025-08-18 17:09:33 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10/52wadalangeng.txt
+2025-08-18 17:09:33 - ConferenceScraper - INFO - Saved talk: 52wada?lang=eng (12328 chars)
+2025-08-18 17:09:33 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/53rasband?lang=eng
+2025-08-18 17:09:33 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/53rasband?lang=eng (attempt 1/10)
+2025-08-18 17:09:33 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/53rasband?lang=eng (223541 bytes)
+2025-08-18 17:09:33 - ConferenceScraper - DEBUG - Successfully extracted 15614 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/53rasband?lang=eng
+2025-08-18 17:09:33 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10
+2025-08-18 17:09:33 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10/53rasbandlangeng.txt
+2025-08-18 17:09:33 - ConferenceScraper - INFO - Saved talk: 53rasband?lang=eng (15614 chars)
+2025-08-18 17:09:33 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/54cook?lang=eng
+2025-08-18 17:09:33 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/54cook?lang=eng (attempt 1/10)
+2025-08-18 17:09:34 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/54cook?lang=eng (209869 bytes)
+2025-08-18 17:09:34 - ConferenceScraper - DEBUG - Successfully extracted 16113 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/54cook?lang=eng
+2025-08-18 17:09:34 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10
+2025-08-18 17:09:34 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10/54cooklangeng.txt
+2025-08-18 17:09:34 - ConferenceScraper - INFO - Saved talk: 54cook?lang=eng (16113 chars)
+2025-08-18 17:09:34 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/55alliaud?lang=eng
+2025-08-18 17:09:34 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/55alliaud?lang=eng (attempt 1/10)
+2025-08-18 17:09:34 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/55alliaud?lang=eng (194124 bytes)
+2025-08-18 17:09:34 - ConferenceScraper - DEBUG - Successfully extracted 11793 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/55alliaud?lang=eng
+2025-08-18 17:09:34 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10
+2025-08-18 17:09:34 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10/55alliaudlangeng.txt
+2025-08-18 17:09:34 - ConferenceScraper - INFO - Saved talk: 55alliaud?lang=eng (11793 chars)
+2025-08-18 17:09:34 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/56egbo?lang=eng
+2025-08-18 17:09:34 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/56egbo?lang=eng (attempt 1/10)
+2025-08-18 17:09:34 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/56egbo?lang=eng (199312 bytes)
+2025-08-18 17:09:34 - ConferenceScraper - DEBUG - Successfully extracted 10545 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/56egbo?lang=eng
+2025-08-18 17:09:34 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10
+2025-08-18 17:09:34 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10/56egbolangeng.txt
+2025-08-18 17:09:34 - ConferenceScraper - INFO - Saved talk: 56egbo?lang=eng (10545 chars)
+2025-08-18 17:09:34 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/57nelson?lang=eng
+2025-08-18 17:09:34 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/57nelson?lang=eng (attempt 1/10)
+2025-08-18 17:09:35 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/57nelson?lang=eng (211339 bytes)
+2025-08-18 17:09:35 - ConferenceScraper - DEBUG - Successfully extracted 11196 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/57nelson?lang=eng
+2025-08-18 17:09:35 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10
+2025-08-18 17:09:35 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10/57nelsonlangeng.txt
+2025-08-18 17:09:35 - ConferenceScraper - INFO - Saved talk: 57nelson?lang=eng (11196 chars)
+2025-08-18 17:09:35 - ProgressTracker - INFO - Progress: 80/81 (98.8%) - Processed: 80, Skipped: 0, Failed: 0
+2025-08-18 17:09:35 - ConferenceScraper - DEBUG - Scraping talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/saturday-morning-session
+2025-08-18 17:09:35 - ConferenceScraper - DEBUG - Attempting to fetch URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/saturday-morning-session (attempt 1/10)
+2025-08-18 17:09:35 - ConferenceScraper - DEBUG - Successfully fetched URL: https://www.churchofjesuschrist.org/study/general-conference/2024/10/saturday-morning-session (132819 bytes)
+2025-08-18 17:09:35 - ConferenceScraper - DEBUG - Successfully extracted 1995 characters from talk: https://www.churchofjesuschrist.org/study/general-conference/2024/10/saturday-morning-session
+2025-08-18 17:09:35 - FileManager - DEBUG - Created directory structure: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10
+2025-08-18 17:09:35 - FileManager - DEBUG - Saved content to file: /Users/jaredteerlink/repos/church-gpt/scraped_content/general-conference/2024-10/saturday-morning-session.txt
+2025-08-18 17:09:35 - ConferenceScraper - INFO - Saved talk: saturday-morning-session (1995 chars)
+2025-08-18 17:09:35 - ProgressTracker - INFO - Progress: 81/81 (100.0%) - Processed: 81, Skipped: 0, Failed: 0
+2025-08-18 17:09:35 - ProgressTracker - INFO - General Conference Scraping completed in 38.6s. Total: 81/81, Processed: 81, Skipped: 0, Failed: 0
+2025-08-18 17:09:35 - ConferenceScraper - INFO - General Conference scraping completed. Processed: 81, Skipped: 0, Failed: 0

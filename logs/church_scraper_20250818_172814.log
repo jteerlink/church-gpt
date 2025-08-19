@@ -1,0 +1,2 @@
+2025-08-18 17:28:14 - root - INFO - Logging initialized
+2025-08-18 17:28:14 - root - ERROR - Configuration error: start_year (2030) cannot be greater than end_year (2025)

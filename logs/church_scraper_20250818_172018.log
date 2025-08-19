@@ -1,0 +1,360 @@
+2025-08-18 17:20:18 - root - INFO - Logging initialized
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Starting General Conference scraping...
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Generated 4 conference URLs for years 1995-1996
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Counting total talks for progress tracking...
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Scraping conference page: https://www.churchofjesuschrist.org/study/general-conference/1995/04?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Found 3 talk URLs on conference page: https://www.churchofjesuschrist.org/study/general-conference/1995/04?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Scraping conference page: https://www.churchofjesuschrist.org/study/general-conference/1995/10?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Found 3 talk URLs on conference page: https://www.churchofjesuschrist.org/study/general-conference/1995/10?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Scraping conference page: https://www.churchofjesuschrist.org/study/general-conference/1996/04?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Found 3 talk URLs on conference page: https://www.churchofjesuschrist.org/study/general-conference/1996/04?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Scraping conference page: https://www.churchofjesuschrist.org/study/general-conference/1996/10?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Found 3 talk URLs on conference page: https://www.churchofjesuschrist.org/study/general-conference/1996/10?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Found 12 total talks across 4 conferences
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Processing conference: 1995-04
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Scraping conference page: https://www.churchofjesuschrist.org/study/general-conference/1995/04?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Found 3 talk URLs on conference page: https://www.churchofjesuschrist.org/study/general-conference/1995/04?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Saved talk: talk-1 (151 chars)
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Saved talk: talk-2 (151 chars)
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Saved talk: talk-3 (151 chars)
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Processing conference: 1995-10
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Scraping conference page: https://www.churchofjesuschrist.org/study/general-conference/1995/10?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Found 3 talk URLs on conference page: https://www.churchofjesuschrist.org/study/general-conference/1995/10?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Saved talk: talk-1 (151 chars)
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Saved talk: talk-2 (151 chars)
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Saved talk: talk-3 (151 chars)
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Processing conference: 1996-04
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Scraping conference page: https://www.churchofjesuschrist.org/study/general-conference/1996/04?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Found 3 talk URLs on conference page: https://www.churchofjesuschrist.org/study/general-conference/1996/04?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Saved talk: talk-1 (151 chars)
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Saved talk: talk-2 (151 chars)
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Saved talk: talk-3 (151 chars)
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Processing conference: 1996-10
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Scraping conference page: https://www.churchofjesuschrist.org/study/general-conference/1996/10?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Found 3 talk URLs on conference page: https://www.churchofjesuschrist.org/study/general-conference/1996/10?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Saved talk: talk-1 (151 chars)
+2025-08-18 17:20:18 - ProgressTracker - INFO - Progress: 10/12 (83.3%) - Processed: 10, Skipped: 0, Failed: 0
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Saved talk: talk-2 (151 chars)
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Saved talk: talk-3 (151 chars)
+2025-08-18 17:20:18 - ProgressTracker - INFO - Progress: 12/12 (100.0%) - Processed: 12, Skipped: 0, Failed: 0
+2025-08-18 17:20:18 - ProgressTracker - INFO - General Conference Scraping completed in 0.0s. Total: 12/12, Processed: 12, Skipped: 0, Failed: 0
+2025-08-18 17:20:18 - ConferenceScraper - INFO - General Conference scraping completed. Processed: 12, Skipped: 0, Failed: 0
+2025-08-18 17:20:18 - root - INFO - Logging initialized
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Starting Liahona magazine scraping...
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Generated 10 Liahona URLs for years 2008-2008
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Counting total articles for progress tracking...
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/01?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/01?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/02?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/02?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/03?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/03?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/05?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/05?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/06?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/06?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/07?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/07?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/08?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/08?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/09?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/09?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/11?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/11?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/12?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/12?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 20 total articles across 10 monthly issues
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Processing Liahona issue: 2008-01
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/01?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/01?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Saved article: article-1 (97 chars)
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Saved article: article-2 (97 chars)
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Processing Liahona issue: 2008-02
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/02?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/02?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Saved article: article-1 (97 chars)
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Saved article: article-2 (97 chars)
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Processing Liahona issue: 2008-03
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/03?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/03?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Saved article: article-1 (97 chars)
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Saved article: article-2 (97 chars)
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Processing Liahona issue: 2008-05
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/05?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/05?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Saved article: article-1 (97 chars)
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Saved article: article-2 (97 chars)
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Processing Liahona issue: 2008-06
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/06?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/06?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Saved article: article-1 (97 chars)
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Saved article: article-2 (97 chars)
+2025-08-18 17:20:18 - ProgressTracker - INFO - Progress: 10/20 (50.0%) - Processed: 10, Skipped: 0, Failed: 0
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Processing Liahona issue: 2008-07
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/07?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/07?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Saved article: article-1 (97 chars)
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Saved article: article-2 (97 chars)
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Processing Liahona issue: 2008-08
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/08?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/08?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Saved article: article-1 (97 chars)
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Saved article: article-2 (97 chars)
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Processing Liahona issue: 2008-09
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/09?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/09?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Saved article: article-1 (97 chars)
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Saved article: article-2 (97 chars)
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Processing Liahona issue: 2008-11
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/11?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/11?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Saved article: article-1 (97 chars)
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Saved article: article-2 (97 chars)
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Processing Liahona issue: 2008-12
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/12?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/12?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Saved article: article-1 (97 chars)
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Saved article: article-2 (97 chars)
+2025-08-18 17:20:18 - ProgressTracker - INFO - Progress: 20/20 (100.0%) - Processed: 20, Skipped: 0, Failed: 0
+2025-08-18 17:20:18 - ProgressTracker - INFO - Liahona Magazine Scraping completed in 0.0s. Total: 20/20, Processed: 20, Skipped: 0, Failed: 0
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Liahona magazine scraping completed. Processed: 20, Skipped: 0, Failed: 0
+2025-08-18 17:20:18 - root - INFO - Logging initialized
+2025-08-18 17:20:18 - root - INFO - Logging initialized
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Starting General Conference scraping...
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Generated 4 conference URLs for years 1995-1996
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Counting total talks for progress tracking...
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Scraping conference page: https://www.churchofjesuschrist.org/study/general-conference/1995/04?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Found 2 talk URLs on conference page: https://www.churchofjesuschrist.org/study/general-conference/1995/04?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Scraping conference page: https://www.churchofjesuschrist.org/study/general-conference/1995/10?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - ERROR - Failed to scrape conference page https://www.churchofjesuschrist.org/study/general-conference/1995/10?lang=eng: Conference page not found
+2025-08-18 17:20:18 - ConferenceScraper - WARNING - Failed to count talks for 1995-10: Failed to scrape conference page: Conference page not found
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Scraping conference page: https://www.churchofjesuschrist.org/study/general-conference/1996/04?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Found 0 talk URLs on conference page: https://www.churchofjesuschrist.org/study/general-conference/1996/04?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Scraping conference page: https://www.churchofjesuschrist.org/study/general-conference/1996/10?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Found 0 talk URLs on conference page: https://www.churchofjesuschrist.org/study/general-conference/1996/10?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Found 2 total talks across 4 conferences
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Processing conference: 1995-04
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Scraping conference page: https://www.churchofjesuschrist.org/study/general-conference/1995/04?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Found 2 talk URLs on conference page: https://www.churchofjesuschrist.org/study/general-conference/1995/04?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Saved talk: talk-1 (13 chars)
+2025-08-18 17:20:18 - ConferenceScraper - ERROR - Failed to scrape talk https://www.churchofjesuschrist.org/study/general-conference/1995/04/talk-2: Talk not found
+2025-08-18 17:20:18 - ConferenceScraper - ERROR - Failed to process talk https://www.churchofjesuschrist.org/study/general-conference/1995/04/talk-2: Failed to scrape talk: Talk not found
+2025-08-18 17:20:18 - ProgressTracker - INFO - Progress: 2/2 (100.0%) - Processed: 1, Skipped: 0, Failed: 1
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Processing conference: 1995-10
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Scraping conference page: https://www.churchofjesuschrist.org/study/general-conference/1995/10?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - ERROR - Failed to scrape conference page https://www.churchofjesuschrist.org/study/general-conference/1995/10?lang=eng: Conference page not found
+2025-08-18 17:20:18 - ConferenceScraper - ERROR - Failed to process conference 1995-10: Failed to scrape conference page: Conference page not found
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Processing conference: 1996-04
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Scraping conference page: https://www.churchofjesuschrist.org/study/general-conference/1996/04?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Found 0 talk URLs on conference page: https://www.churchofjesuschrist.org/study/general-conference/1996/04?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - WARNING - No talk URLs found for conference: https://www.churchofjesuschrist.org/study/general-conference/1996/04?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Processing conference: 1996-10
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Scraping conference page: https://www.churchofjesuschrist.org/study/general-conference/1996/10?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Found 0 talk URLs on conference page: https://www.churchofjesuschrist.org/study/general-conference/1996/10?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - WARNING - No talk URLs found for conference: https://www.churchofjesuschrist.org/study/general-conference/1996/10?lang=eng
+2025-08-18 17:20:18 - ProgressTracker - INFO - General Conference Scraping completed in 0.0s. Total: 2/2, Processed: 1, Skipped: 0, Failed: 1
+2025-08-18 17:20:18 - ConferenceScraper - INFO - General Conference scraping completed. Processed: 1, Skipped: 0, Failed: 1
+2025-08-18 17:20:18 - root - INFO - Logging initialized
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Starting General Conference scraping...
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Generated 4 conference URLs for years 1995-1996
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Counting total talks for progress tracking...
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Scraping conference page: https://www.churchofjesuschrist.org/study/general-conference/1995/04?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Found 2 talk URLs on conference page: https://www.churchofjesuschrist.org/study/general-conference/1995/04?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Scraping conference page: https://www.churchofjesuschrist.org/study/general-conference/1995/10?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Found 2 talk URLs on conference page: https://www.churchofjesuschrist.org/study/general-conference/1995/10?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Scraping conference page: https://www.churchofjesuschrist.org/study/general-conference/1996/04?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Found 2 talk URLs on conference page: https://www.churchofjesuschrist.org/study/general-conference/1996/04?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Scraping conference page: https://www.churchofjesuschrist.org/study/general-conference/1996/10?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Found 2 talk URLs on conference page: https://www.churchofjesuschrist.org/study/general-conference/1996/10?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Found 8 total talks across 4 conferences
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Processing conference: 1995-04
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Scraping conference page: https://www.churchofjesuschrist.org/study/general-conference/1995/04?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Found 2 talk URLs on conference page: https://www.churchofjesuschrist.org/study/general-conference/1995/04?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Saved talk: talk-1 (34 chars)
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Saved talk: talk-2 (34 chars)
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Processing conference: 1995-10
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Scraping conference page: https://www.churchofjesuschrist.org/study/general-conference/1995/10?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Found 2 talk URLs on conference page: https://www.churchofjesuschrist.org/study/general-conference/1995/10?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Saved talk: talk-1 (34 chars)
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Saved talk: talk-2 (34 chars)
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Processing conference: 1996-04
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Scraping conference page: https://www.churchofjesuschrist.org/study/general-conference/1996/04?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Found 2 talk URLs on conference page: https://www.churchofjesuschrist.org/study/general-conference/1996/04?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Saved talk: talk-1 (34 chars)
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Saved talk: talk-2 (34 chars)
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Processing conference: 1996-10
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Scraping conference page: https://www.churchofjesuschrist.org/study/general-conference/1996/10?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Found 2 talk URLs on conference page: https://www.churchofjesuschrist.org/study/general-conference/1996/10?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Saved talk: talk-1 (34 chars)
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Saved talk: talk-2 (34 chars)
+2025-08-18 17:20:18 - ProgressTracker - INFO - Progress: 8/8 (100.0%) - Processed: 8, Skipped: 0, Failed: 0
+2025-08-18 17:20:18 - ProgressTracker - INFO - General Conference Scraping completed in 0.0s. Total: 8/8, Processed: 8, Skipped: 0, Failed: 0
+2025-08-18 17:20:18 - ConferenceScraper - INFO - General Conference scraping completed. Processed: 8, Skipped: 0, Failed: 0
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Starting General Conference scraping...
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Generated 4 conference URLs for years 1995-1996
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Counting total talks for progress tracking...
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Scraping conference page: https://www.churchofjesuschrist.org/study/general-conference/1995/04?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Found 2 talk URLs on conference page: https://www.churchofjesuschrist.org/study/general-conference/1995/04?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Scraping conference page: https://www.churchofjesuschrist.org/study/general-conference/1995/10?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Found 2 talk URLs on conference page: https://www.churchofjesuschrist.org/study/general-conference/1995/10?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Scraping conference page: https://www.churchofjesuschrist.org/study/general-conference/1996/04?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Found 2 talk URLs on conference page: https://www.churchofjesuschrist.org/study/general-conference/1996/04?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Scraping conference page: https://www.churchofjesuschrist.org/study/general-conference/1996/10?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Found 2 talk URLs on conference page: https://www.churchofjesuschrist.org/study/general-conference/1996/10?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Found 8 total talks across 4 conferences
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Processing conference: 1995-04
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Scraping conference page: https://www.churchofjesuschrist.org/study/general-conference/1995/04?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Found 2 talk URLs on conference page: https://www.churchofjesuschrist.org/study/general-conference/1995/04?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Processing conference: 1995-10
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Scraping conference page: https://www.churchofjesuschrist.org/study/general-conference/1995/10?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Found 2 talk URLs on conference page: https://www.churchofjesuschrist.org/study/general-conference/1995/10?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Processing conference: 1996-04
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Scraping conference page: https://www.churchofjesuschrist.org/study/general-conference/1996/04?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Found 2 talk URLs on conference page: https://www.churchofjesuschrist.org/study/general-conference/1996/04?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Processing conference: 1996-10
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Scraping conference page: https://www.churchofjesuschrist.org/study/general-conference/1996/10?lang=eng
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Found 2 talk URLs on conference page: https://www.churchofjesuschrist.org/study/general-conference/1996/10?lang=eng
+2025-08-18 17:20:18 - ProgressTracker - INFO - Progress: 8/8 (100.0%) - Processed: 0, Skipped: 8, Failed: 0
+2025-08-18 17:20:18 - ProgressTracker - INFO - General Conference Scraping completed in 0.0s. Total: 8/8, Processed: 0, Skipped: 8, Failed: 0
+2025-08-18 17:20:18 - ConferenceScraper - INFO - General Conference scraping completed. Processed: 0, Skipped: 8, Failed: 0
+2025-08-18 17:20:18 - root - INFO - Logging initialized
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Starting Liahona magazine scraping...
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Generated 10 Liahona URLs for years 2008-2008
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Counting total articles for progress tracking...
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/01?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/01?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/02?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/02?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/03?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/03?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/05?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/05?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/06?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/06?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/07?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/07?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/08?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/08?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/09?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/09?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/11?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/11?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/12?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/12?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 20 total articles across 10 monthly issues
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Processing Liahona issue: 2008-01
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/01?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/01?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Saved article: article-1 (40 chars)
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Saved article: article-2 (40 chars)
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Processing Liahona issue: 2008-02
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/02?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/02?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Saved article: article-1 (40 chars)
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Saved article: article-2 (40 chars)
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Processing Liahona issue: 2008-03
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/03?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/03?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Saved article: article-1 (40 chars)
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Saved article: article-2 (40 chars)
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Processing Liahona issue: 2008-05
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/05?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/05?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Saved article: article-1 (40 chars)
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Saved article: article-2 (40 chars)
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Processing Liahona issue: 2008-06
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/06?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/06?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Saved article: article-1 (40 chars)
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Saved article: article-2 (40 chars)
+2025-08-18 17:20:18 - ProgressTracker - INFO - Progress: 10/20 (50.0%) - Processed: 10, Skipped: 0, Failed: 0
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Processing Liahona issue: 2008-07
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/07?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/07?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Saved article: article-1 (40 chars)
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Saved article: article-2 (40 chars)
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Processing Liahona issue: 2008-08
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/08?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/08?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Saved article: article-1 (40 chars)
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Saved article: article-2 (40 chars)
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Processing Liahona issue: 2008-09
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/09?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/09?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Saved article: article-1 (40 chars)
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Saved article: article-2 (40 chars)
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Processing Liahona issue: 2008-11
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/11?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/11?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Saved article: article-1 (40 chars)
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Saved article: article-2 (40 chars)
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Processing Liahona issue: 2008-12
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/12?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/12?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Saved article: article-1 (40 chars)
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Saved article: article-2 (40 chars)
+2025-08-18 17:20:18 - ProgressTracker - INFO - Progress: 20/20 (100.0%) - Processed: 20, Skipped: 0, Failed: 0
+2025-08-18 17:20:18 - ProgressTracker - INFO - Liahona Magazine Scraping completed in 0.0s. Total: 20/20, Processed: 20, Skipped: 0, Failed: 0
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Liahona magazine scraping completed. Processed: 20, Skipped: 0, Failed: 0
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Starting Liahona magazine scraping...
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Generated 10 Liahona URLs for years 2008-2008
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Counting total articles for progress tracking...
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/01?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/01?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/02?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/02?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/03?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/03?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/05?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/05?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/06?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/06?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/07?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/07?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/08?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/08?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/09?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/09?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/11?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/11?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/12?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/12?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 20 total articles across 10 monthly issues
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Processing Liahona issue: 2008-01
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/01?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/01?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Processing Liahona issue: 2008-02
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/02?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/02?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Processing Liahona issue: 2008-03
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/03?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/03?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Processing Liahona issue: 2008-05
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/05?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/05?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Processing Liahona issue: 2008-06
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/06?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/06?lang=eng
+2025-08-18 17:20:18 - ProgressTracker - INFO - Progress: 10/20 (50.0%) - Processed: 0, Skipped: 10, Failed: 0
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Processing Liahona issue: 2008-07
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/07?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/07?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Processing Liahona issue: 2008-08
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/08?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/08?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Processing Liahona issue: 2008-09
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/09?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/09?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Processing Liahona issue: 2008-11
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/11?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/11?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Processing Liahona issue: 2008-12
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Scraping monthly Liahona page: https://www.churchofjesuschrist.org/study/liahona/2008/12?lang=eng
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Found 2 article URLs on monthly page: https://www.churchofjesuschrist.org/study/liahona/2008/12?lang=eng
+2025-08-18 17:20:18 - ProgressTracker - INFO - Progress: 20/20 (100.0%) - Processed: 0, Skipped: 20, Failed: 0
+2025-08-18 17:20:18 - ProgressTracker - INFO - Liahona Magazine Scraping completed in 0.0s. Total: 20/20, Processed: 0, Skipped: 20, Failed: 0
+2025-08-18 17:20:18 - LiahonaScraper - INFO - Liahona magazine scraping completed. Processed: 0, Skipped: 20, Failed: 0
+2025-08-18 17:20:18 - root - INFO - Logging initialized
+2025-08-18 17:20:18 - ConferenceScraper - INFO - Generated 2 conference URLs for years 1995-1995
+2025-08-18 17:20:19 - ConferenceScraper - INFO - Scraping conference page: https://www.churchofjesuschrist.org/study/general-conference/1995/04?lang=eng
+2025-08-18 17:20:21 - ConferenceScraper - INFO - Found 50 talk URLs on conference page: https://www.churchofjesuschrist.org/study/general-conference/1995/04?lang=eng
