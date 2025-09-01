@@ -1,0 +1,30 @@
+{"step": 5, "timestamp": 1756596692.795114, "loss": 2.5, "learning_rate": 0.001, "perplexity": 12.0, "cpu_memory_mb": 222.734375, "cpu_memory_percent": 1.3594627380371094}
+{"step": 1, "timestamp": 1756596692.8168461, "loss": 3.0, "perplexity": 12.0, "cpu_memory_mb": 222.734375, "cpu_memory_percent": 1.3594627380371094}
+{"step": 2, "timestamp": 1756596692.816863, "loss": 2.5, "perplexity": 10.0, "cpu_memory_mb": 222.734375, "cpu_memory_percent": 1.3594627380371094}
+{"step": 3, "timestamp": 1756596692.816873, "loss": 2.0, "perplexity": 8.0, "cpu_memory_mb": 222.734375, "cpu_memory_percent": 1.3594627380371094}
+{"step": 4, "timestamp": 1756596692.816881, "loss": 1.8, "perplexity": 7.2, "cpu_memory_mb": 222.734375, "cpu_memory_percent": 1.3594627380371094}
+{"step": 5, "timestamp": 1756596692.816889, "loss": 1.5, "perplexity": 6.0, "cpu_memory_mb": 222.734375, "cpu_memory_percent": 1.3594627380371094}
+{"step": 5, "timestamp": 1756685201.78861, "loss": 2.5, "learning_rate": 0.001, "perplexity": 12.0, "cpu_memory_mb": 219.90625, "cpu_memory_percent": 1.3422012329101562}
+{"step": 1, "timestamp": 1756685201.806865, "loss": 3.0, "perplexity": 12.0, "cpu_memory_mb": 219.90625, "cpu_memory_percent": 1.3422012329101562}
+{"step": 2, "timestamp": 1756685201.806885, "loss": 2.5, "perplexity": 10.0, "cpu_memory_mb": 219.90625, "cpu_memory_percent": 1.3422012329101562}
+{"step": 3, "timestamp": 1756685201.806895, "loss": 2.0, "perplexity": 8.0, "cpu_memory_mb": 219.90625, "cpu_memory_percent": 1.3422012329101562}
+{"step": 4, "timestamp": 1756685201.806902, "loss": 1.8, "perplexity": 7.2, "cpu_memory_mb": 219.90625, "cpu_memory_percent": 1.3422012329101562}
+{"step": 5, "timestamp": 1756685201.8069088, "loss": 1.5, "perplexity": 6.0, "cpu_memory_mb": 219.90625, "cpu_memory_percent": 1.3422012329101562}
+{"step": 5, "timestamp": 1756685273.467326, "loss": 2.5, "learning_rate": 0.001, "perplexity": 12.0, "cpu_memory_mb": 223.46875, "cpu_memory_percent": 1.3639450073242188}
+{"step": 1, "timestamp": 1756685273.473624, "loss": 3.0, "perplexity": 12.0, "cpu_memory_mb": 223.46875, "cpu_memory_percent": 1.3639450073242188}
+{"step": 2, "timestamp": 1756685273.473644, "loss": 2.5, "perplexity": 10.0, "cpu_memory_mb": 223.46875, "cpu_memory_percent": 1.3639450073242188}
+{"step": 3, "timestamp": 1756685273.473653, "loss": 2.0, "perplexity": 8.0, "cpu_memory_mb": 223.46875, "cpu_memory_percent": 1.3639450073242188}
+{"step": 4, "timestamp": 1756685273.473661, "loss": 1.8, "perplexity": 7.2, "cpu_memory_mb": 223.46875, "cpu_memory_percent": 1.3639450073242188}
+{"step": 5, "timestamp": 1756685273.473669, "loss": 1.5, "perplexity": 6.0, "cpu_memory_mb": 223.46875, "cpu_memory_percent": 1.3639450073242188}
+{"step": 5, "timestamp": 1756685314.4790888, "loss": 2.5, "learning_rate": 0.001, "perplexity": 12.0, "cpu_memory_mb": 219.875, "cpu_memory_percent": 1.342010498046875}
+{"step": 1, "timestamp": 1756685314.4851232, "loss": 3.0, "perplexity": 12.0, "cpu_memory_mb": 219.875, "cpu_memory_percent": 1.342010498046875}
+{"step": 2, "timestamp": 1756685314.485145, "loss": 2.5, "perplexity": 10.0, "cpu_memory_mb": 219.875, "cpu_memory_percent": 1.342010498046875}
+{"step": 3, "timestamp": 1756685314.4851542, "loss": 2.0, "perplexity": 8.0, "cpu_memory_mb": 219.875, "cpu_memory_percent": 1.342010498046875}
+{"step": 4, "timestamp": 1756685314.485162, "loss": 1.8, "perplexity": 7.2, "cpu_memory_mb": 219.875, "cpu_memory_percent": 1.342010498046875}
+{"step": 5, "timestamp": 1756685314.48517, "loss": 1.5, "perplexity": 6.0, "cpu_memory_mb": 219.875, "cpu_memory_percent": 1.342010498046875}
+{"step": 5, "timestamp": 1756685346.35293, "loss": 2.5, "learning_rate": 0.001, "perplexity": 12.0, "cpu_memory_mb": 220.390625, "cpu_memory_percent": 1.3451576232910156}
+{"step": 1, "timestamp": 1756685346.37051, "loss": 3.0, "perplexity": 12.0, "cpu_memory_mb": 220.390625, "cpu_memory_percent": 1.3451576232910156}
+{"step": 2, "timestamp": 1756685346.370534, "loss": 2.5, "perplexity": 10.0, "cpu_memory_mb": 220.390625, "cpu_memory_percent": 1.3451576232910156}
+{"step": 3, "timestamp": 1756685346.370541, "loss": 2.0, "perplexity": 8.0, "cpu_memory_mb": 220.390625, "cpu_memory_percent": 1.3451576232910156}
+{"step": 4, "timestamp": 1756685346.370547, "loss": 1.8, "perplexity": 7.2, "cpu_memory_mb": 220.390625, "cpu_memory_percent": 1.3451576232910156}
+{"step": 5, "timestamp": 1756685346.370552, "loss": 1.5, "perplexity": 6.0, "cpu_memory_mb": 220.390625, "cpu_memory_percent": 1.3451576232910156}

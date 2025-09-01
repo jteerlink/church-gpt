@@ -8,6 +8,12 @@ dependencies = [
     # Core scraping dependencies (minimal by default)
     "requests>=2.31.0",
     "beautifulsoup4>=4.12.0",
+    "transformers>=4.56.0",
+    "torch>=2.8.0",
+    "datasets>=4.0.0",
+    "evaluate>=0.4.5",
+    "scikit-learn>=1.6.1",
+    "nltk>=3.9.1",
 ]
 
 # Note: This project uses uv for dependency management

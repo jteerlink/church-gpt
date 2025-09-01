@@ -11,12 +11,20 @@ Gemma 3 models are compact, open-weight Transformer decoders released by Google;
 ```
 church-gpt/
 ├── src/
-│   └── church_scraper/          # Main scraping library
-│       ├── __init__.py          # Package exports  
-│       ├── __main__.py          # Module entry point
-│       └── core.py              # Core scraper implementation
+│   ├── church_scraper/          # Main scraping library
+│   │   ├── __init__.py          # Package exports  
+│   │   ├── __main__.py          # Module entry point
+│   │   └── core.py              # Core scraper implementation
+│   └── data_processing/         # Training and evaluation components
+│       ├── prompt_engineering.py        # Basic prompt templates
+│       ├── advanced_prompt_engineering.py  # Phase 4: Advanced prompting
+│       ├── training_pipeline_optimization.py  # Phase 5: Optimized training
+│       ├── training_config.py           # Training configuration
+│       └── evaluation.py               # Evaluation framework
 ├── tests/
-│   ├── unit/                    # Unit tests
+│   ├── unit/                    # Unit tests (87 tests total)
+│   │   ├── test_advanced_prompt_engineering.py  # 33 tests
+│   │   └── test_training_pipeline_optimization.py  # 54 tests
 │   └── integration/             # Integration tests
 ├── scripts/
 │   ├── start_scraper.sh         # Interactive scraper CLI
@@ -68,11 +76,235 @@ The enhanced scraping system provides:
 
 LoRA keeps memory footprint small and permits merging adapter weights for deployment or leaving them detachable for rapid experimentation.
 
+### Advanced Training Features
+
+**Phase 4: Advanced Prompt Engineering**
+- **Speaker-specific adaptation** – Custom prompt templates for Russell M. Nelson, Dieter F. Uchtdorf, and Jeffrey R. Holland with unique rhetorical patterns
+- **Conversation-style templates** – Interview and dialogue scenarios for natural interaction patterns
+- **Difficulty-aware selection** – Progressive complexity levels (Simple → Advanced) for optimal training progression
+- **Template validation system** – Comprehensive validation with fallback mechanisms and context-aware formatting
+
+**Phase 5: Training Pipeline Optimization**
+- **Memory-efficient data loading** – Lazy loading with intelligent caching and memory mapping support
+- **Adaptive gradient accumulation** – Dynamic adjustment based on memory usage with 4 optimization levels
+- **Mixed precision training** – fp16/bf16 support with automatic loss scaling and gradient management
+- **Comprehensive monitoring** – Real-time performance profiling, memory tracking, and metrics collection
+- **Resume capability** – Full checkpoint management with automatic training state restoration
+
+### Using Advanced Training Features
+
+```python
+# Advanced prompt engineering with speaker adaptation
+from src.data_processing.advanced_prompt_engineering import AdvancedPromptEngine, DifficultyLevel
+
+engine = AdvancedPromptEngine()
+prompt = engine.generate_prompt(
+    content="Faith is a principle of action",
+    speaker="Russell M. Nelson",
+    difficulty=DifficultyLevel.COMPLEX,
+    mode="conversation"
+)
+
+# Optimized training pipeline with memory efficiency
+from src.data_processing.training_pipeline_optimization import create_training_pipeline, OptimizationLevel
+
+pipeline = create_training_pipeline(
+    optimization_level=OptimizationLevel.AGGRESSIVE,
+    checkpoint_dir="./checkpoints",
+    metrics_dir="./metrics"
+)
+
+# Memory-efficient dataset and dataloader
+dataset = pipeline.create_optimized_dataloader(training_data, batch_size=8)
+scaler, autocast_dtype = pipeline.setup_mixed_precision()
+
+# Training loop with optimization
+for batch in dataset:
+    with torch.autocast(device_type='cuda', dtype=autocast_dtype):
+        loss = model(batch)
+    
+    should_update = pipeline.optimize_step(loss, model, optimizer, scaler)
+    
+    if pipeline.should_checkpoint():
+        pipeline.checkpoint_manager.save_checkpoint(
+            state=pipeline.training_state,
+            model_state=model.state_dict(),
+            optimizer_state=optimizer.state_dict()
+        )
+```
+
+### Complete Training Workflow
+
+For a full end-to-end training workflow with all advanced features:
+
+```python
+# complete_training_example.py
+import torch
+from transformers import AutoTokenizer, AutoModelForCausalLM, TrainingArguments, Trainer
+from peft import LoraConfig, get_peft_model
+from src.data_processing.advanced_prompt_engineering import AdvancedPromptEngine, DifficultyLevel
+from src.data_processing.training_pipeline_optimization import create_training_pipeline, OptimizationLevel
+from src.data_processing.evaluation import create_evaluation_framework
+
+def main():
+    # 1. Setup advanced prompt engineering
+    prompt_engine = AdvancedPromptEngine()
+    
+    # 2. Create optimized training pipeline
+    pipeline = create_training_pipeline(
+        optimization_level=OptimizationLevel.AGGRESSIVE,
+        checkpoint_dir="./checkpoints/advanced",
+        metrics_dir="./metrics/advanced"
+    )
+    
+    # 3. Setup evaluation framework
+    eval_framework = create_evaluation_framework(
+        validation_ratio=0.2,
+        early_stopping_patience=3
+    )
+    
+    # 4. Load and prepare model
+    model_name = "google/gemma-2-7b"
+    tokenizer = AutoTokenizer.from_pretrained(model_name)
+    model = AutoModelForCausalLM.from_pretrained(
+        model_name,
+        torch_dtype=torch.float16,
+        device_map="auto"
+    )
+    
+    # 5. Apply LoRA configuration
+    lora_config = LoraConfig(
+        r=32, lora_alpha=64,
+        target_modules=["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
+        lora_dropout=0.1, bias="none", task_type="CAUSAL_LM"
+    )
+    model = get_peft_model(model, lora_config)
+    
+    # 6. Prepare training data with advanced prompts
+    # Load your conference talk data here
+    training_data = []  # Your scraped conference data
+    
+    # Generate advanced prompts for each example
+    processed_data = []
+    for example in training_data:
+        prompt = prompt_engine.generate_prompt(
+            content=example['content'],
+            speaker=example.get('speaker', 'Unknown'),
+            difficulty=DifficultyLevel.MODERATE,
+            mode="completion"
+        )
+        processed_data.append({
+            'input_text': prompt,
+            'output_text': example['response']
+        })
+    
+    # 7. Create memory-efficient dataset
+    dataset = pipeline.create_optimized_dataloader(processed_data, batch_size=4)
+    
+    # 8. Setup mixed precision training
+    scaler, autocast_dtype = pipeline.setup_mixed_precision()
+    
+    # 9. Training loop with optimization
+    optimizer = torch.optim.AdamW(model.parameters(), lr=2e-4)
+    
+    model.train()
+    for epoch in range(3):
+        for batch_idx, batch in enumerate(dataset):
+            # Forward pass with mixed precision
+            with torch.autocast(device_type='cuda', dtype=autocast_dtype):
+                outputs = model(**batch)
+                loss = outputs.loss
+            
+            # Optimized backward pass with gradient accumulation
+            should_update = pipeline.optimize_step(loss, model, optimizer, scaler)
+            
+            # Log metrics
+            if batch_idx % 10 == 0:
+                pipeline.log_training_metrics({
+                    'loss': loss.item(),
+                    'learning_rate': optimizer.param_groups[0]['lr'],
+                    'epoch': epoch,
+                    'batch': batch_idx
+                })
+            
+            # Save checkpoints
+            if pipeline.should_checkpoint():
+                pipeline.checkpoint_manager.save_checkpoint(
+                    state=pipeline.training_state,
+                    model_state=model.state_dict(),
+                    optimizer_state=optimizer.state_dict(),
+                    extra_data={'epoch': epoch, 'batch': batch_idx}
+                )
+    
+    # 10. Generate training report
+    report = pipeline.get_optimization_report()
+    print("Training completed successfully!")
+    print(f"Optimization level: {report['optimization_level']}")
+
+if __name__ == "__main__":
+    main()
+```
+
+### Quick Inference Examples
+
+Simple inference examples for common use cases:
+
+```python
+# quick_inference.py
+from src.data_processing.advanced_prompt_engineering import AdvancedPromptEngine, DifficultyLevel
+
+# Initialize prompt engine
+engine = AdvancedPromptEngine()
+
+# Generate different types of prompts
+examples = [
+    {
+        'content': 'Faith is the foundation of all righteousness',
+        'speaker': 'Russell M. Nelson',
+        'difficulty': DifficultyLevel.COMPLEX,
+        'mode': 'completion'
+    },
+    {
+        'content': 'How do we develop greater faith?',
+        'speaker': 'Dieter F. Uchtdorf',
+        'difficulty': DifficultyLevel.MODERATE,
+        'mode': 'conversation'
+    },
+    {
+        'content': 'The importance of scripture study',
+        'speaker': 'Jeffrey R. Holland',
+        'difficulty': DifficultyLevel.SIMPLE,
+        'mode': 'instruction'
+    }
+]
+
+for example in examples:
+    prompt = engine.generate_prompt(**example)
+    print(f"\n{example['speaker']} ({example['mode']}):")
+    print(prompt)
+    print("-" * 50)
+```
+
 ## Evaluation
 
-1. Perplexity on held-out conference talks (baseline 9.8 → 4.2).  
-2. Scriptural citation accuracy measured against the BYU Scripture Citation Index.  
-3. Manual doctrine-consistency review by subject-matter experts.
+1. **Perplexity on held-out conference talks** (baseline 9.8 → 4.2).  
+2. **Scriptural citation accuracy** measured against the BYU Scripture Citation Index.  
+3. **Manual doctrine-consistency review** by subject-matter experts.
+4. **Comprehensive test coverage** – 87 unit tests covering advanced prompt engineering, training optimization, evaluation framework, and integration scenarios.
+
+## System Requirements
+
+### For Training Pipeline
+- **Python**: 3.9+ (automatically managed by `uv`)
+- **GPU**: NVIDIA GPU with 16GB+ VRAM recommended for full model training
+- **Memory**: 32GB+ RAM recommended for aggressive optimization levels
+- **Storage**: 50GB+ for checkpoints and metrics
+- **Dependencies**: PyTorch 2.0+, Transformers, PEFT, BitsAndBytes
+
+### For Inference Only
+- **GPU**: 8GB+ VRAM for fp16 inference, 4GB+ for 4-bit quantization
+- **Memory**: 16GB+ RAM recommended
+- **Dependencies**: PyTorch, Transformers, PEFT
 
 ## Quick-start
 
@@ -140,6 +372,126 @@ uv run python tests/integration/validate_integration_tests.py
 # Run specific test suites with pytest
 uv run pytest tests/unit/test_conference_scraper.py -v
 uv run pytest tests/unit/test_liahona_scraper.py -v
+uv run pytest tests/unit/test_advanced_prompt_engineering.py -v  # 33 tests
+uv run pytest tests/unit/test_training_pipeline_optimization.py -v  # 54 tests
+```
+
+### Training Pipeline
+
+Start the optimized training pipeline with advanced features:
+
+```bash
+# Install training dependencies
+uv add torch transformers peft datasets accelerate bitsandbytes
+
+# Basic training with balanced optimization
+python -c "
+from src.data_processing.training_pipeline_optimization import create_training_pipeline, OptimizationLevel
+from src.data_processing.advanced_prompt_engineering import AdvancedPromptEngine
+
+# Create optimized pipeline
+pipeline = create_training_pipeline(
+    optimization_level=OptimizationLevel.BALANCED,
+    checkpoint_dir='./checkpoints',
+    metrics_dir='./metrics'
+)
+
+# Load and prepare training data
+# (Add your training data loading logic here)
+print('Training pipeline initialized successfully')
+"
+
+# Advanced training with maximum optimization
+python -c "
+from src.data_processing.training_pipeline_optimization import create_training_pipeline, OptimizationLevel
+
+# Maximum optimization for enterprise training
+pipeline = create_training_pipeline(
+    optimization_level=OptimizationLevel.MAXIMUM,
+    checkpoint_dir='./checkpoints/optimized',
+    metrics_dir='./metrics/optimized'
+)
+
+# Setup mixed precision training
+scaler, autocast_dtype = pipeline.setup_mixed_precision()
+print(f'Mixed precision setup: {autocast_dtype}')
+
+# Check resume capability
+if pipeline.resume_training():
+    print('Resumed from existing checkpoint')
+else:
+    print('Starting fresh training')
+"
+
+# Monitor training progress
+python -c "
+from src.data_processing.training_pipeline_optimization import create_training_pipeline
+
+pipeline = create_training_pipeline()
+report = pipeline.get_optimization_report()
+print('Optimization Report:', report['optimization_level'])
+"
+```
+
+### Model Inference
+
+Run inference with the fine-tuned model:
+
+```bash
+# Install inference dependencies
+uv add torch transformers peft
+
+# Interactive chat mode (recommended for testing)
+uv run python scripts/serve.py --checkpoint ./checkpoints/gemma3-7b-church
+
+# API server mode for applications
+uv run python scripts/serve.py --checkpoint ./checkpoints/gemma3-7b-church --api --port 8000
+
+# Use the CLI helper script (handles uv setup automatically)
+./scripts/start_chat.sh
+
+# Advanced inference with prompt engineering
+python -c "
+from src.data_processing.advanced_prompt_engineering import AdvancedPromptEngine, DifficultyLevel
+
+engine = AdvancedPromptEngine()
+
+# Generate speaker-specific prompt
+prompt = engine.generate_prompt(
+    content='Faith is a principle of action and power',
+    speaker='Russell M. Nelson',
+    difficulty=DifficultyLevel.COMPLEX,
+    mode='conversation'
+)
+
+print('Generated prompt:', prompt)
+"
+
+# Programmatic inference (example)
+python -c "
+import torch
+from transformers import AutoTokenizer, AutoModelForCausalLM
+from peft import PeftModel
+
+# Load base model and tokenizer
+model_name = 'google/gemma-2-7b'
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+base_model = AutoModelForCausalLM.from_pretrained(
+    model_name,
+    torch_dtype=torch.float16,
+    device_map='auto'
+)
+
+# Load fine-tuned adapter
+model = PeftModel.from_pretrained(base_model, './checkpoints/gemma3-7b-church')
+
+# Generate response
+prompt = 'Faith is a principle that'
+inputs = tokenizer(prompt, return_tensors='pt')
+outputs = model.generate(**inputs, max_length=200, temperature=0.7)
+response = tokenizer.decode(outputs[0], skip_special_tokens=True)
+print(response)
+"
 ```
 
 ### CLI Helper Scripts
